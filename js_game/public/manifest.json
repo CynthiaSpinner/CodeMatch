@@ -1,0 +1,15 @@
+{
+  "short_name": "Code Match",
+  "name": "Code Match",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#764ba2"
+}

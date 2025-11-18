@@ -1,0 +1,1947 @@
+{
+  "javascript": [
+    {
+      "question": "What keyword is used to declare a variable that cannot be reassigned in JavaScript?",
+      "answer": "const"
+    },
+    {
+      "question": "What is the result of typeof null in JavaScript?",
+      "answer": "object"
+    },
+    {
+      "question": "What method is used to add an element to the end of an array in JavaScript?",
+      "answer": "push()"
+    },
+    {
+      "question": "What is the difference between == and === in JavaScript?",
+      "answer": "== performs type coercion, === checks both value and type"
+    },
+    {
+      "question": "What is a closure in JavaScript?",
+      "answer": "A function that has access to variables in its outer (enclosing) lexical scope"
+    },
+    {
+      "question": "What does the 'this' keyword refer to in JavaScript?",
+      "answer": "The object that is executing the current function"
+    },
+    {
+      "question": "What is the purpose of the 'use strict' directive in JavaScript?",
+      "answer": "It enables strict mode, which catches common coding errors and prevents unsafe actions"
+    },
+    {
+      "question": "What is a promise in JavaScript?",
+      "answer": "An object representing the eventual completion or failure of an asynchronous operation"
+    },
+    {
+      "question": "What is the spread operator in JavaScript?",
+      "answer": "The ... operator that expands arrays or objects into individual elements"
+    },
+    {
+      "question": "What is destructuring in JavaScript?",
+      "answer": "A syntax that allows you to extract values from arrays or properties from objects into distinct variables"
+    },
+    {
+      "question": "What is the difference between let, const, and var in JavaScript?",
+      "answer": "let and const are block-scoped, var is function-scoped. const cannot be reassigned"
+    },
+    {
+      "question": "What is an arrow function in JavaScript?",
+      "answer": "A shorter syntax for writing function expressions with lexical 'this' binding"
+    },
+    {
+      "question": "What is the event loop in JavaScript?",
+      "answer": "A mechanism that handles asynchronous operations by managing the execution of callbacks"
+    },
+    {
+      "question": "What is hoisting in JavaScript?",
+      "answer": "The behavior where variable and function declarations are moved to the top of their scope before code execution"
+    },
+    {
+      "question": "What is the difference between null and undefined in JavaScript?",
+      "answer": "null is an assigned value representing no value, undefined means a variable has been declared but not assigned"
+    },
+    {
+      "question": "What is a callback function in JavaScript?",
+      "answer": "A function passed as an argument to another function to be executed later"
+    },
+    {
+      "question": "What is the purpose of the map() method in JavaScript?",
+      "answer": "To create a new array by applying a function to each element of an existing array"
+    },
+    {
+      "question": "What is the difference between filter() and find() in JavaScript?",
+      "answer": "filter() returns all matching elements, find() returns only the first matching element"
+    },
+    {
+      "question": "What is a template literal in JavaScript?",
+      "answer": "A string literal that allows embedded expressions using backticks and ${}"
+    },
+    {
+      "question": "What is the purpose of the reduce() method in JavaScript?",
+      "answer": "To reduce an array to a single value by applying a function to each element"
+    },
+    {
+      "question": "What is the difference between slice() and splice() in JavaScript?",
+      "answer": "slice() returns a copy without modifying the original, splice() modifies the original array"
+    },
+    {
+      "question": "What is JSON in JavaScript?",
+      "answer": "JavaScript Object Notation, a lightweight data interchange format"
+    },
+    {
+      "question": "What is the purpose of JSON.parse() in JavaScript?",
+      "answer": "To convert a JSON string into a JavaScript object"
+    },
+    {
+      "question": "What is the purpose of JSON.stringify() in JavaScript?",
+      "answer": "To convert a JavaScript object into a JSON string"
+    },
+    {
+      "question": "What is a Set in JavaScript?",
+      "answer": "A collection of unique values with no duplicates"
+    },
+    {
+      "question": "What is a Map in JavaScript?",
+      "answer": "A collection of key-value pairs where keys can be any data type"
+    },
+    {
+      "question": "What is the difference between forEach() and map() in JavaScript?",
+      "answer": "forEach() executes a function for each element, map() returns a new array"
+    },
+    {
+      "question": "What is the purpose of the bind() method in JavaScript?",
+      "answer": "To create a new function with a fixed 'this' value and optional arguments"
+    },
+    {
+      "question": "What is the difference between call() and apply() in JavaScript?",
+      "answer": "call() takes arguments individually, apply() takes arguments as an array"
+    },
+    {
+      "question": "What is a generator function in JavaScript?",
+      "answer": "A function that can be paused and resumed, using the yield keyword"
+    },
+    {
+      "question": "What is the purpose of the Symbol type in JavaScript?",
+      "answer": "To create unique identifiers that cannot be accidentally overwritten"
+    },
+    {
+      "question": "What is the difference between Object.freeze() and Object.seal() in JavaScript?",
+      "answer": "freeze() prevents all changes, seal() allows changes to existing properties but not additions"
+    },
+    {
+      "question": "What is a WeakMap in JavaScript?",
+      "answer": "A Map that allows garbage collection of keys and only accepts objects as keys"
+    },
+    {
+      "question": "What is the purpose of the Proxy object in JavaScript?",
+      "answer": "To create a wrapper around an object to intercept and customize operations"
+    },
+    {
+      "question": "What is the difference between async/await and Promises in JavaScript?",
+      "answer": "async/await is syntactic sugar that makes asynchronous code look synchronous"
+    },
+    {
+      "question": "What is the purpose of the fetch API in JavaScript?",
+      "answer": "To make HTTP requests and handle responses asynchronously"
+    },
+    {
+      "question": "What is a module in JavaScript?",
+      "answer": "A file containing code that can be imported and exported for reuse"
+    },
+    {
+      "question": "What is the difference between export default and named exports in JavaScript?",
+      "answer": "default export allows one per module, named exports allow multiple per module"
+    },
+    {
+      "question": "What is the purpose of the Object.assign() method in JavaScript?",
+      "answer": "To copy properties from one or more source objects to a target object"
+    },
+    {
+      "question": "What is the difference between shallow copy and deep copy in JavaScript?",
+      "answer": "Shallow copy copies references, deep copy creates new objects for nested properties"
+    }
+  ],
+  "nodejs": [
+    {
+      "question": "What is Node.js?",
+      "answer": "A JavaScript runtime built on Chrome's V8 JavaScript engine that allows JavaScript to run on the server"
+    },
+    {
+      "question": "What is the purpose of package.json in Node.js?",
+      "answer": "A file that contains metadata about the project and its dependencies"
+    },
+    {
+      "question": "What is npm in Node.js?",
+      "answer": "Node Package Manager, the default package manager for Node.js"
+    },
+    {
+      "question": "What is the require() function used for in Node.js?",
+      "answer": "To import modules and dependencies into a Node.js file"
+    },
+    {
+      "question": "What is the difference between require() and import in Node.js?",
+      "answer": "require() is CommonJS syntax, import is ES6 module syntax"
+    },
+    {
+      "question": "What is the event loop in Node.js?",
+      "answer": "A mechanism that handles asynchronous operations and callbacks in Node.js"
+    },
+    {
+      "question": "What is Express.js?",
+      "answer": "A minimal and flexible Node.js web application framework"
+    },
+    {
+      "question": "What is the purpose of middleware in Express.js?",
+      "answer": "Functions that have access to the request and response objects and can modify them or end the request-response cycle"
+    },
+    {
+      "question": "What is the fs module in Node.js used for?",
+      "answer": "File system operations like reading, writing, and manipulating files"
+    },
+    {
+      "question": "What is the difference between synchronous and asynchronous operations in Node.js?",
+      "answer": "Synchronous operations block execution, asynchronous operations allow other code to run while waiting"
+    },
+    {
+      "question": "What is a stream in Node.js?",
+      "answer": "An abstract interface for working with streaming data, allowing data to be processed piece by piece"
+    },
+    {
+      "question": "What is the purpose of process.env in Node.js?",
+      "answer": "An object containing user environment variables"
+    },
+    {
+      "question": "What is the __dirname variable in Node.js?",
+      "answer": "A global variable that contains the directory name of the current module"
+    },
+    {
+      "question": "What is the purpose of the http module in Node.js?",
+      "answer": "To create HTTP servers and make HTTP requests"
+    },
+    {
+      "question": "What is a buffer in Node.js?",
+      "answer": "A temporary storage area for binary data"
+    },
+    {
+      "question": "What is the difference between process.nextTick() and setImmediate() in Node.js?",
+      "answer": "process.nextTick() executes before setImmediate(), which executes in the next iteration of the event loop"
+    },
+    {
+      "question": "What is the purpose of the path module in Node.js?",
+      "answer": "To handle and transform file paths across different operating systems"
+    },
+    {
+      "question": "What is the difference between __dirname and __filename in Node.js?",
+      "answer": "__dirname is the directory name, __filename is the full file path including the filename"
+    },
+    {
+      "question": "What is the purpose of the crypto module in Node.js?",
+      "answer": "To provide cryptographic functionality including hashing, encryption, and decryption"
+    },
+    {
+      "question": "What is a package manager lock file in Node.js?",
+      "answer": "A file that locks dependency versions to ensure consistent installs across environments"
+    },
+    {
+      "question": "What is the purpose of nodemon in Node.js development?",
+      "answer": "A utility that automatically restarts the Node.js application when file changes are detected"
+    },
+    {
+      "question": "What is the difference between process.exit() and process.kill() in Node.js?",
+      "answer": "process.exit() gracefully exits the process, process.kill() sends a signal to terminate a process"
+    },
+    {
+      "question": "What is the purpose of the os module in Node.js?",
+      "answer": "To provide operating system-related utility methods and properties"
+    },
+    {
+      "question": "What is a cluster module in Node.js?",
+      "answer": "A module that allows you to create child processes that share server ports"
+    },
+    {
+      "question": "What is the purpose of the url module in Node.js?",
+      "answer": "To parse and format URL strings"
+    },
+    {
+      "question": "What is the difference between readFile and readFileSync in Node.js?",
+      "answer": "readFile is asynchronous, readFileSync is synchronous and blocks execution"
+    },
+    {
+      "question": "What is the purpose of the querystring module in Node.js?",
+      "answer": "To parse and format URL query strings"
+    },
+    {
+      "question": "What is a child process in Node.js?",
+      "answer": "A process created by the parent process to execute commands or run other scripts"
+    },
+    {
+      "question": "What is the purpose of the zlib module in Node.js?",
+      "answer": "To provide compression and decompression functionality using gzip and deflate"
+    },
+    {
+      "question": "What is the difference between global and process global in Node.js?",
+      "answer": "global is the global object, process is a global object that provides information about the current Node.js process"
+    },
+    {
+      "question": "What is the purpose of the util module in Node.js?",
+      "answer": "To provide utility functions for various purposes like promisify and inheritance"
+    },
+    {
+      "question": "What is middleware chaining in Express.js?",
+      "answer": "The process of executing multiple middleware functions in sequence"
+    },
+    {
+      "question": "What is the purpose of body-parser middleware in Express.js?",
+      "answer": "To parse incoming request bodies in a middleware before handlers"
+    },
+    {
+      "question": "What is the difference between app.get() and app.use() in Express.js?",
+      "answer": "app.get() handles GET requests for a specific route, app.use() mounts middleware for all HTTP methods"
+    },
+    {
+      "question": "What is the purpose of CORS middleware in Express.js?",
+      "answer": "To enable Cross-Origin Resource Sharing, allowing requests from different origins"
+    },
+    {
+      "question": "What is the purpose of the dotenv package in Node.js?",
+      "answer": "To load environment variables from a .env file into process.env"
+    },
+    {
+      "question": "What is the difference between npm and npx in Node.js?",
+      "answer": "npm is the package manager, npx executes packages without installing them globally"
+    },
+    {
+      "question": "What is the purpose of the events module in Node.js?",
+      "answer": "To handle events using the EventEmitter class for creating custom event-driven applications"
+    },
+    {
+      "question": "What is the purpose of the timers module in Node.js?",
+      "answer": "To provide functions like setTimeout, setInterval, and setImmediate for scheduling tasks"
+    },
+    {
+      "question": "What is the difference between spawn() and exec() in Node.js child_process?",
+      "answer": "spawn() returns a stream, exec() buffers output and returns it when the process completes"
+    }
+  ],
+  "react": [
+    {
+      "question": "What is React?",
+      "answer": "A JavaScript library for building user interfaces, particularly web applications"
+    },
+    {
+      "question": "What is JSX in React?",
+      "answer": "JavaScript XML, a syntax extension that allows writing HTML-like code in JavaScript"
+    },
+    {
+      "question": "What is a component in React?",
+      "answer": "A reusable piece of code that returns JSX to render UI elements"
+    },
+    {
+      "question": "What is the difference between functional and class components in React?",
+      "answer": "Functional components are functions that return JSX, class components are ES6 classes that extend React.Component"
+    },
+    {
+      "question": "What are props in React?",
+      "answer": "Properties passed from parent to child components to share data"
+    },
+    {
+      "question": "What is state in React?",
+      "answer": "Data that can change over time and triggers re-renders when updated"
+    },
+    {
+      "question": "What is the useState hook in React?",
+      "answer": "A React hook that allows functional components to manage state"
+    },
+    {
+      "question": "What is the useEffect hook in React?",
+      "answer": "A React hook that performs side effects in functional components, similar to lifecycle methods"
+    },
+    {
+      "question": "What is the virtual DOM in React?",
+      "answer": "A JavaScript representation of the real DOM that React uses to optimize updates"
+    },
+    {
+      "question": "What is the purpose of keys in React lists?",
+      "answer": "To help React identify which items have changed, been added, or removed"
+    },
+    {
+      "question": "What is prop drilling in React?",
+      "answer": "The process of passing props through multiple levels of components"
+    },
+    {
+      "question": "What is the Context API in React?",
+      "answer": "A way to share data across the component tree without prop drilling"
+    },
+    {
+      "question": "What is the difference between controlled and uncontrolled components in React?",
+      "answer": "Controlled components have their state controlled by React, uncontrolled components store state in the DOM"
+    },
+    {
+      "question": "What is React Router used for?",
+      "answer": "To enable navigation and routing in React applications"
+    },
+    {
+      "question": "What is the purpose of React.memo()?",
+      "answer": "A higher-order component that memoizes the result to prevent unnecessary re-renders"
+    },
+    {
+      "question": "What is the useCallback hook in React?",
+      "answer": "A hook that returns a memoized callback function to prevent unnecessary re-renders"
+    },
+    {
+      "question": "What is the useMemo hook in React?",
+      "answer": "A hook that returns a memoized value to optimize expensive calculations"
+    },
+    {
+      "question": "What is the useRef hook in React?",
+      "answer": "A hook that returns a mutable ref object that persists across renders"
+    },
+    {
+      "question": "What is the useContext hook in React?",
+      "answer": "A hook that allows you to consume context values in functional components"
+    },
+    {
+      "question": "What is the difference between useState and useReducer in React?",
+      "answer": "useState is for simple state, useReducer is for complex state logic with multiple sub-values"
+    },
+    {
+      "question": "What is a custom hook in React?",
+      "answer": "A JavaScript function that starts with 'use' and can call other hooks"
+    },
+    {
+      "question": "What is the purpose of the key prop in React lists?",
+      "answer": "To help React identify which items have changed, been added, or removed efficiently"
+    },
+    {
+      "question": "What is the difference between controlled and uncontrolled components in React?",
+      "answer": "Controlled components have React control their state, uncontrolled components use DOM for state"
+    },
+    {
+      "question": "What is React Fragment?",
+      "answer": "A way to group multiple elements without adding extra nodes to the DOM"
+    },
+    {
+      "question": "What is the purpose of React.lazy()?",
+      "answer": "To enable code splitting by lazy loading components"
+    },
+    {
+      "question": "What is the difference between React.PureComponent and React.Component?",
+      "answer": "PureComponent performs a shallow comparison of props and state, Component does not"
+    },
+    {
+      "question": "What is the purpose of Error Boundaries in React?",
+      "answer": "To catch JavaScript errors anywhere in the component tree and display fallback UI"
+    },
+    {
+      "question": "What is the difference between componentDidMount and useEffect in React?",
+      "answer": "componentDidMount runs after mount, useEffect can run after mount and on updates"
+    },
+    {
+      "question": "What is the purpose of React.StrictMode?",
+      "answer": "To highlight potential problems in an application during development"
+    },
+    {
+      "question": "What is the difference between props and state in React?",
+      "answer": "Props are passed from parent to child and are immutable, state is internal and mutable"
+    },
+    {
+      "question": "What is the purpose of the useLayoutEffect hook in React?",
+      "answer": "To perform side effects synchronously after all DOM mutations but before paint"
+    },
+    {
+      "question": "What is the difference between React.createElement and JSX?",
+      "answer": "JSX is syntactic sugar that compiles to React.createElement calls"
+    },
+    {
+      "question": "What is the purpose of React Portal?",
+      "answer": "To render children into a DOM node that exists outside the parent component hierarchy"
+    },
+    {
+      "question": "What is the difference between shallow rendering and full rendering in React testing?",
+      "answer": "Shallow rendering tests components in isolation, full rendering tests the component tree"
+    },
+    {
+      "question": "What is the purpose of React.cloneElement?",
+      "answer": "To clone and return a new React element with merged props"
+    },
+    {
+      "question": "What is the difference between forwardRef and useImperativeHandle in React?",
+      "answer": "forwardRef forwards refs to child components, useImperativeHandle customizes the ref value"
+    },
+    {
+      "question": "What is the purpose of React Suspense?",
+      "answer": "To display a fallback UI while waiting for data to load"
+    },
+    {
+      "question": "What is the difference between class component lifecycle and hooks in React?",
+      "answer": "Lifecycle methods are class-based, hooks provide similar functionality in functional components"
+    },
+    {
+      "question": "What is the purpose of React DevTools?",
+      "answer": "A browser extension for debugging React applications and inspecting component trees"
+    }
+  ],
+  "html-css": [
+    {
+      "question": "What does HTML stand for?",
+      "answer": "HyperText Markup Language"
+    },
+    {
+      "question": "What is the purpose of the <div> element in HTML?",
+      "answer": "A block-level container used to group and style elements"
+    },
+    {
+      "question": "What is the difference between <div> and <span> in HTML?",
+      "answer": "<div> is block-level, <span> is inline-level"
+    },
+    {
+      "question": "What is CSS?",
+      "answer": "Cascading Style Sheets, used to style and layout web pages"
+    },
+    {
+      "question": "What is the box model in CSS?",
+      "answer": "A model that describes how elements are rendered with content, padding, border, and margin"
+    },
+    {
+      "question": "What is Flexbox in CSS?",
+      "answer": "A one-dimensional layout method for arranging items in rows or columns"
+    },
+    {
+      "question": "What is CSS Grid?",
+      "answer": "A two-dimensional layout system for creating grid-based layouts"
+    },
+    {
+      "question": "What is the difference between class and id selectors in CSS?",
+      "answer": "Classes can be used multiple times, IDs must be unique and used once per page"
+    },
+    {
+      "question": "What is responsive design in CSS?",
+      "answer": "Designing websites to work on different screen sizes using media queries and flexible layouts"
+    },
+    {
+      "question": "What is the purpose of CSS media queries?",
+      "answer": "To apply different styles based on device characteristics like screen width"
+    },
+    {
+      "question": "What is the z-index property in CSS?",
+      "answer": "A property that controls the stacking order of positioned elements"
+    },
+    {
+      "question": "What is the difference between display: block, inline, and inline-block in CSS?",
+      "answer": "block takes full width, inline only takes needed width, inline-block combines both behaviors"
+    },
+    {
+      "question": "What is the purpose of CSS pseudo-classes like :hover?",
+      "answer": "To style elements based on their state or user interaction"
+    },
+    {
+      "question": "What is the difference between padding and margin in CSS?",
+      "answer": "Padding is space inside an element, margin is space outside an element"
+    },
+    {
+      "question": "What is the purpose of the <semantic> HTML5 elements like <header> and <footer>?",
+      "answer": "To provide meaning and structure to web page content"
+    },
+    {
+      "question": "What is CSS specificity?",
+      "answer": "A set of rules that determines which CSS styles are applied when multiple rules target the same element"
+    },
+    {
+      "question": "What is the purpose of the <header> element in HTML5?",
+      "answer": "To define a header section for a document or section"
+    },
+    {
+      "question": "What is the purpose of the <nav> element in HTML5?",
+      "answer": "To define a set of navigation links"
+    },
+    {
+      "question": "What is the purpose of the <article> element in HTML5?",
+      "answer": "To define independent, self-contained content"
+    },
+    {
+      "question": "What is the purpose of the <section> element in HTML5?",
+      "answer": "To define a section in a document"
+    },
+    {
+      "question": "What is the purpose of the <aside> element in HTML5?",
+      "answer": "To define content aside from the main content, like a sidebar"
+    },
+    {
+      "question": "What is the purpose of the <footer> element in HTML5?",
+      "answer": "To define a footer for a document or section"
+    },
+    {
+      "question": "What is the difference between <ul> and <ol> in HTML?",
+      "answer": "<ul> creates unordered lists, <ol> creates ordered lists"
+    },
+    {
+      "question": "What is the purpose of the <form> element in HTML?",
+      "answer": "To create an HTML form for user input"
+    },
+    {
+      "question": "What is the difference between <input type='text'> and <textarea> in HTML?",
+      "answer": "input is single-line, textarea is multi-line text input"
+    },
+    {
+      "question": "What is the purpose of the <label> element in HTML?",
+      "answer": "To define a label for form elements, improving accessibility"
+    },
+    {
+      "question": "What is the purpose of the <table> element in HTML?",
+      "answer": "To create a table with rows and columns of data"
+    },
+    {
+      "question": "What is the difference between <th> and <td> in HTML tables?",
+      "answer": "<th> defines header cells, <td> defines data cells"
+    },
+    {
+      "question": "What is the purpose of CSS variables (custom properties)?",
+      "answer": "To store values that can be reused throughout the stylesheet"
+    },
+    {
+      "question": "What is the difference between position: relative and position: absolute in CSS?",
+      "answer": "relative positions relative to its normal position, absolute positions relative to nearest positioned ancestor"
+    },
+    {
+      "question": "What is the purpose of the transform property in CSS?",
+      "answer": "To apply 2D or 3D transformations to elements like rotate, scale, translate"
+    },
+    {
+      "question": "What is the difference between transition and animation in CSS?",
+      "answer": "transition animates property changes, animation uses keyframes for complex animations"
+    },
+    {
+      "question": "What is the purpose of the @media rule in CSS?",
+      "answer": "To apply styles based on media queries for responsive design"
+    },
+    {
+      "question": "What is the difference between em and rem units in CSS?",
+      "answer": "em is relative to parent font-size, rem is relative to root font-size"
+    },
+    {
+      "question": "What is the purpose of the calc() function in CSS?",
+      "answer": "To perform calculations to determine CSS property values"
+    },
+    {
+      "question": "What is the difference between inline and block elements in HTML?",
+      "answer": "inline elements don't start on new lines, block elements start on new lines"
+    },
+    {
+      "question": "What is the purpose of the <meta> tag in HTML?",
+      "answer": "To provide metadata about the HTML document"
+    },
+    {
+      "question": "What is the purpose of the <link> element in HTML?",
+      "answer": "To link external resources like CSS stylesheets"
+    },
+    {
+      "question": "What is the difference between <script> and <script async> in HTML?",
+      "answer": "script blocks parsing, async downloads in parallel and executes when ready"
+    },
+    {
+      "question": "What is the purpose of the <canvas> element in HTML5?",
+      "answer": "To draw graphics, animations, and other visual images using JavaScript"
+    },
+    {
+      "question": "What is the purpose of the <svg> element in HTML?",
+      "answer": "To define vector-based graphics in XML format"
+    }
+  ],
+  "sql": [
+    {
+      "question": "What does SQL stand for?",
+      "answer": "Structured Query Language"
+    },
+    {
+      "question": "What is the purpose of the SELECT statement in SQL?",
+      "answer": "To retrieve data from one or more database tables"
+    },
+    {
+      "question": "What is the difference between WHERE and HAVING clauses in SQL?",
+      "answer": "WHERE filters rows before grouping, HAVING filters groups after GROUP BY"
+    },
+    {
+      "question": "What is a primary key in SQL?",
+      "answer": "A column or set of columns that uniquely identifies each row in a table"
+    },
+    {
+      "question": "What is a foreign key in SQL?",
+      "answer": "A column that creates a relationship between two tables by referencing the primary key of another table"
+    },
+    {
+      "question": "What is the difference between INNER JOIN and LEFT JOIN in SQL?",
+      "answer": "INNER JOIN returns only matching rows, LEFT JOIN returns all rows from the left table and matching rows from the right"
+    },
+    {
+      "question": "What is the purpose of the GROUP BY clause in SQL?",
+      "answer": "To group rows that have the same values in specified columns"
+    },
+    {
+      "question": "What is normalization in database design?",
+      "answer": "The process of organizing data to reduce redundancy and improve data integrity"
+    },
+    {
+      "question": "What is the difference between DELETE and TRUNCATE in SQL?",
+      "answer": "DELETE removes rows one by one and can be rolled back, TRUNCATE removes all rows at once and cannot be rolled back"
+    },
+    {
+      "question": "What is an index in SQL?",
+      "answer": "A database structure that improves the speed of data retrieval operations"
+    },
+    {
+      "question": "What is the purpose of the ORDER BY clause in SQL?",
+      "answer": "To sort the result set in ascending or descending order"
+    },
+    {
+      "question": "What is a stored procedure in SQL?",
+      "answer": "A prepared SQL code that can be saved and reused"
+    },
+    {
+      "question": "What is the difference between UNION and UNION ALL in SQL?",
+      "answer": "UNION removes duplicate rows, UNION ALL includes all rows including duplicates"
+    },
+    {
+      "question": "What is a transaction in SQL?",
+      "answer": "A sequence of database operations that are executed as a single unit of work"
+    },
+    {
+      "question": "What is ACID in database transactions?",
+      "answer": "Atomicity, Consistency, Isolation, Durability - properties that ensure reliable database transactions"
+    },
+    {
+      "question": "What is the difference between CHAR and VARCHAR in SQL?",
+      "answer": "CHAR is fixed-length, VARCHAR is variable-length"
+    },
+    {
+      "question": "What is the purpose of the DISTINCT keyword in SQL?",
+      "answer": "To return only unique values, eliminating duplicate rows"
+    },
+    {
+      "question": "What is the difference between COUNT(*) and COUNT(column) in SQL?",
+      "answer": "COUNT(*) counts all rows, COUNT(column) counts non-null values in the column"
+    },
+    {
+      "question": "What is the purpose of the LIMIT clause in SQL?",
+      "answer": "To restrict the number of rows returned by a query"
+    },
+    {
+      "question": "What is the difference between INNER JOIN and OUTER JOIN in SQL?",
+      "answer": "INNER JOIN returns only matching rows, OUTER JOIN returns all rows from one or both tables"
+    },
+    {
+      "question": "What is the purpose of the CASE statement in SQL?",
+      "answer": "To perform conditional logic and return different values based on conditions"
+    },
+    {
+      "question": "What is the difference between UNION and JOIN in SQL?",
+      "answer": "UNION combines rows from multiple queries, JOIN combines columns from multiple tables"
+    },
+    {
+      "question": "What is the purpose of the EXISTS clause in SQL?",
+      "answer": "To check if a subquery returns any rows"
+    },
+    {
+      "question": "What is the difference between WHERE and ON in SQL JOINs?",
+      "answer": "ON specifies join conditions, WHERE filters rows after the join"
+    },
+    {
+      "question": "What is the purpose of the COALESCE function in SQL?",
+      "answer": "To return the first non-null value from a list of expressions"
+    },
+    {
+      "question": "What is the difference between DROP and DELETE in SQL?",
+      "answer": "DROP removes the table structure, DELETE removes rows but keeps the table"
+    },
+    {
+      "question": "What is the purpose of the ALTER TABLE statement in SQL?",
+      "answer": "To modify the structure of an existing table"
+    },
+    {
+      "question": "What is the difference between a view and a table in SQL?",
+      "answer": "A table stores data, a view is a virtual table based on a query"
+    },
+    {
+      "question": "What is the purpose of the HAVING clause in SQL?",
+      "answer": "To filter groups after GROUP BY, similar to WHERE but for aggregated data"
+    },
+    {
+      "question": "What is the difference between a clustered and non-clustered index in SQL?",
+      "answer": "Clustered index determines physical order of data, non-clustered is a separate structure"
+    },
+    {
+      "question": "What is the purpose of the LIKE operator in SQL?",
+      "answer": "To search for a specified pattern in a column using wildcards"
+    },
+    {
+      "question": "What is the difference between % and _ wildcards in SQL LIKE?",
+      "answer": "% matches any sequence of characters, _ matches a single character"
+    },
+    {
+      "question": "What is the purpose of the NULLIF function in SQL?",
+      "answer": "To return NULL if two expressions are equal, otherwise returns the first expression"
+    },
+    {
+      "question": "What is the difference between a subquery and a join in SQL?",
+      "answer": "Subquery is a query within a query, join combines data from multiple tables"
+    },
+    {
+      "question": "What is the purpose of the RANK() window function in SQL?",
+      "answer": "To assign a rank to each row within a partition, with gaps for ties"
+    },
+    {
+      "question": "What is the difference between RANK() and DENSE_RANK() in SQL?",
+      "answer": "RANK() leaves gaps after ties, DENSE_RANK() does not leave gaps"
+    },
+    {
+      "question": "What is the purpose of the ROLLBACK statement in SQL?",
+      "answer": "To undo all changes made in the current transaction"
+    },
+    {
+      "question": "What is the difference between COMMIT and ROLLBACK in SQL?",
+      "answer": "COMMIT saves changes permanently, ROLLBACK undoes changes"
+    },
+    {
+      "question": "What is the purpose of the CHECK constraint in SQL?",
+      "answer": "To ensure that values in a column meet a specific condition"
+    },
+    {
+      "question": "What is the difference between a database and a schema in SQL?",
+      "answer": "Database is a collection of schemas, schema is a collection of database objects"
+    }
+  ],
+  "csharp": [
+    {
+      "question": "What is C#?",
+      "answer": "A modern, object-oriented programming language developed by Microsoft"
+    },
+    {
+      "question": "What is the .NET Framework?",
+      "answer": "A software framework developed by Microsoft for building Windows applications"
+    },
+    {
+      "question": "What is the difference between value types and reference types in C#?",
+      "answer": "Value types store data directly, reference types store references to data"
+    },
+    {
+      "question": "What is a namespace in C#?",
+      "answer": "A way to organize and group related classes and other types"
+    },
+    {
+      "question": "What is the purpose of the 'using' statement in C#?",
+      "answer": "To import namespaces or to ensure proper disposal of resources"
+    },
+    {
+      "question": "What is the difference between 'public' and 'private' access modifiers in C#?",
+      "answer": "public allows access from anywhere, private restricts access to the same class"
+    },
+    {
+      "question": "What is an interface in C#?",
+      "answer": "A contract that defines a set of methods and properties that a class must implement"
+    },
+    {
+      "question": "What is inheritance in C#?",
+      "answer": "A mechanism where a class can inherit properties and methods from another class"
+    },
+    {
+      "question": "What is polymorphism in C#?",
+      "answer": "The ability of objects of different types to be accessed through the same interface"
+    },
+    {
+      "question": "What is LINQ in C#?",
+      "answer": "Language Integrated Query, a set of features for querying data from various sources"
+    },
+    {
+      "question": "What is the difference between 'var' and explicit type declaration in C#?",
+      "answer": "var infers the type at compile time, explicit declaration specifies the type directly"
+    },
+    {
+      "question": "What is a delegate in C#?",
+      "answer": "A type that represents references to methods with a particular parameter list and return type"
+    },
+    {
+      "question": "What is the purpose of 'async' and 'await' keywords in C#?",
+      "answer": "To write asynchronous code that doesn't block the calling thread"
+    },
+    {
+      "question": "What is the difference between 'string' and 'StringBuilder' in C#?",
+      "answer": "string is immutable, StringBuilder is mutable and more efficient for multiple concatenations"
+    },
+    {
+      "question": "What is exception handling in C#?",
+      "answer": "The process of catching and handling errors using try-catch-finally blocks"
+    },
+    {
+      "question": "What is a property in C#?",
+      "answer": "A member that provides a flexible mechanism to read, write, or compute the value of a private field"
+    },
+    {
+      "question": "What is the difference between ref and out parameters in C#?",
+      "answer": "ref requires initialization before passing, out does not require initialization"
+    },
+    {
+      "question": "What is the purpose of the params keyword in C#?",
+      "answer": "To allow a method to accept a variable number of arguments"
+    },
+    {
+      "question": "What is the difference between struct and class in C#?",
+      "answer": "struct is a value type stored on the stack, class is a reference type stored on the heap"
+    },
+    {
+      "question": "What is the purpose of the sealed keyword in C#?",
+      "answer": "To prevent a class from being inherited"
+    },
+    {
+      "question": "What is the difference between abstract and virtual methods in C#?",
+      "answer": "abstract must be overridden, virtual can be overridden but has a default implementation"
+    },
+    {
+      "question": "What is the purpose of the readonly keyword in C#?",
+      "answer": "To create a field that can only be assigned at declaration or in a constructor"
+    },
+    {
+      "question": "What is the difference between const and readonly in C#?",
+      "answer": "const is compile-time constant, readonly is runtime constant"
+    },
+    {
+      "question": "What is the purpose of the using statement in C#?",
+      "answer": "To ensure proper disposal of resources by automatically calling Dispose()"
+    },
+    {
+      "question": "What is the difference between IEnumerable and IEnumerator in C#?",
+      "answer": "IEnumerable provides GetEnumerator(), IEnumerator provides MoveNext() and Current"
+    },
+    {
+      "question": "What is the purpose of the yield keyword in C#?",
+      "answer": "To create iterator methods that return values one at a time"
+    },
+    {
+      "question": "What is the difference between == and Equals() in C#?",
+      "answer": "== compares references for reference types, Equals() can be overridden for value comparison"
+    },
+    {
+      "question": "What is the purpose of the nameof operator in C#?",
+      "answer": "To get the string name of a variable, type, or member"
+    },
+    {
+      "question": "What is the difference between throw and throw ex in C#?",
+      "answer": "throw preserves stack trace, throw ex resets the stack trace"
+    },
+    {
+      "question": "What is the purpose of the null-conditional operator (?.) in C#?",
+      "answer": "To safely access members of an object that might be null"
+    },
+    {
+      "question": "What is the difference between null-coalescing (??) and null-conditional (?.) operators in C#?",
+      "answer": "?? provides default value if null, ?. safely accesses members"
+    },
+    {
+      "question": "What is the purpose of the lock statement in C#?",
+      "answer": "To ensure only one thread can access a code block at a time"
+    },
+    {
+      "question": "What is the difference between Task and Thread in C#?",
+      "answer": "Task is higher-level abstraction for async operations, Thread is lower-level thread management"
+    },
+    {
+      "question": "What is the purpose of the async/await pattern in C#?",
+      "answer": "To write asynchronous code that looks synchronous and doesn't block threads"
+    },
+    {
+      "question": "What is the difference between Task.Run() and async/await in C#?",
+      "answer": "Task.Run() runs on thread pool, async/await uses existing context"
+    },
+    {
+      "question": "What is the purpose of the Expression type in C#?",
+      "answer": "To represent code as data structures that can be analyzed and transformed"
+    },
+    {
+      "question": "What is the difference between Func and Action delegates in C#?",
+      "answer": "Func returns a value, Action does not return a value"
+    },
+    {
+      "question": "What is the purpose of attributes in C#?",
+      "answer": "To add metadata to code elements like classes, methods, and properties"
+    },
+    {
+      "question": "What is the difference between IEnumerable and IQueryable in C#?",
+      "answer": "IEnumerable executes in memory, IQueryable can execute on database or remote source"
+    },
+    {
+      "question": "What is the purpose of the partial keyword in C#?",
+      "answer": "To split a class, struct, or interface definition across multiple files"
+    }
+  ],
+  "aspnet": [
+    {
+      "question": "What is ASP.NET?",
+      "answer": "A web framework developed by Microsoft for building web applications and services"
+    },
+    {
+      "question": "What is the MVC pattern in ASP.NET?",
+      "answer": "Model-View-Controller, a design pattern that separates application logic into three components"
+    },
+    {
+      "question": "What is a controller in ASP.NET MVC?",
+      "answer": "A class that handles user input and coordinates between the model and view"
+    },
+    {
+      "question": "What is a view in ASP.NET MVC?",
+      "answer": "A template that defines how data is presented to the user"
+    },
+    {
+      "question": "What is a model in ASP.NET MVC?",
+      "answer": "A class that represents data and business logic"
+    },
+    {
+      "question": "What is Entity Framework in ASP.NET?",
+      "answer": "An ORM (Object-Relational Mapping) framework for working with databases"
+    },
+    {
+      "question": "What is Razor in ASP.NET?",
+      "answer": "A markup syntax for embedding server-based code into web pages"
+    },
+    {
+      "question": "What is the purpose of routing in ASP.NET MVC?",
+      "answer": "To map URLs to controller actions"
+    },
+    {
+      "question": "What is ViewBag in ASP.NET MVC?",
+      "answer": "A dynamic object for passing data from controller to view"
+    },
+    {
+      "question": "What is the difference between ViewBag and ViewData in ASP.NET?",
+      "answer": "ViewBag is dynamic, ViewData is a dictionary. Both are used to pass data from controller to view"
+    },
+    {
+      "question": "What is middleware in ASP.NET Core?",
+      "answer": "Software components that are assembled into an application pipeline to handle requests and responses"
+    },
+    {
+      "question": "What is dependency injection in ASP.NET?",
+      "answer": "A design pattern that allows objects to receive their dependencies from external sources"
+    },
+    {
+      "question": "What is the purpose of Web API in ASP.NET?",
+      "answer": "To build HTTP services that can be consumed by various clients"
+    },
+    {
+      "question": "What is authentication in ASP.NET?",
+      "answer": "The process of verifying the identity of a user"
+    },
+    {
+      "question": "What is authorization in ASP.NET?",
+      "answer": "The process of determining what a user is allowed to do"
+    },
+    {
+      "question": "What is the difference between ASP.NET Web Forms and ASP.NET MVC?",
+      "answer": "Web Forms uses a page-based model, MVC uses a pattern-based approach with separation of concerns"
+    },
+    {
+      "question": "What is the purpose of TempData in ASP.NET MVC?",
+      "answer": "To pass data between actions, persisting only until it's read"
+    },
+    {
+      "question": "What is the difference between ActionResult and ViewResult in ASP.NET MVC?",
+      "answer": "ActionResult is base class, ViewResult is specific type that returns a view"
+    },
+    {
+      "question": "What is the purpose of model binding in ASP.NET MVC?",
+      "answer": "To automatically map HTTP request data to action method parameters"
+    },
+    {
+      "question": "What is the difference between [HttpGet] and [HttpPost] attributes in ASP.NET?",
+      "answer": "[HttpGet] handles GET requests, [HttpPost] handles POST requests"
+    },
+    {
+      "question": "What is the purpose of the [ValidateAntiForgeryToken] attribute in ASP.NET?",
+      "answer": "To prevent cross-site request forgery (CSRF) attacks"
+    },
+    {
+      "question": "What is the difference between AddTransient, AddScoped, and AddSingleton in ASP.NET Core?",
+      "answer": "Transient creates new instance each time, Scoped once per request, Singleton once for application lifetime"
+    },
+    {
+      "question": "What is the purpose of appsettings.json in ASP.NET Core?",
+      "answer": "To store application configuration settings like connection strings and app settings"
+    },
+    {
+      "question": "What is the difference between IActionResult and ActionResult in ASP.NET Core?",
+      "answer": "IActionResult is interface, ActionResult is abstract base class"
+    },
+    {
+      "question": "What is the purpose of the [Authorize] attribute in ASP.NET?",
+      "answer": "To restrict access to controllers or actions to authenticated users"
+    },
+    {
+      "question": "What is the difference between authentication and authorization in ASP.NET?",
+      "answer": "Authentication verifies identity, authorization determines permissions"
+    },
+    {
+      "question": "What is the purpose of the Startup class in ASP.NET Core?",
+      "answer": "To configure services and the request pipeline for the application"
+    },
+    {
+      "question": "What is the difference between app.Use() and app.Run() in ASP.NET Core?",
+      "answer": "Use() can call next middleware, Run() terminates the pipeline"
+    },
+    {
+      "question": "What is the purpose of the [FromBody] attribute in ASP.NET Core?",
+      "answer": "To bind model data from the request body (typically JSON)"
+    },
+    {
+      "question": "What is the difference between ViewResult and JsonResult in ASP.NET MVC?",
+      "answer": "ViewResult returns HTML view, JsonResult returns JSON data"
+    },
+    {
+      "question": "What is the purpose of the [Route] attribute in ASP.NET Core?",
+      "answer": "To define custom URL routing patterns for controllers and actions"
+    },
+    {
+      "question": "What is the difference between ASP.NET Core and ASP.NET Framework?",
+      "answer": "Core is cross-platform and modular, Framework is Windows-only and monolithic"
+    },
+    {
+      "question": "What is the purpose of the Program.cs file in ASP.NET Core?",
+      "answer": "To configure and start the web host and application"
+    },
+    {
+      "question": "What is the difference between AddDbContext and AddDbContextPool in ASP.NET Core?",
+      "answer": "AddDbContext creates new context each time, AddDbContextPool reuses contexts from a pool"
+    },
+    {
+      "question": "What is the purpose of the [ApiController] attribute in ASP.NET Core?",
+      "answer": "To enable API-specific behaviors like automatic model validation and binding"
+    },
+    {
+      "question": "What is the difference between IHttpContextAccessor and HttpContext in ASP.NET Core?",
+      "answer": "IHttpContextAccessor provides access to HttpContext in services, HttpContext is request-scoped"
+    },
+    {
+      "question": "What is the purpose of the [Bind] attribute in ASP.NET MVC?",
+      "answer": "To specify which properties should be included or excluded from model binding"
+    },
+    {
+      "question": "What is the difference between app.UseRouting() and app.UseEndpoints() in ASP.NET Core?",
+      "answer": "UseRouting() matches request to endpoint, UseEndpoints() executes the matched endpoint"
+    },
+    {
+      "question": "What is the purpose of the [FromQuery] attribute in ASP.NET Core?",
+      "answer": "To bind model data from query string parameters"
+    },
+    {
+      "question": "What is the difference between app.UseStaticFiles() and app.UseDefaultFiles() in ASP.NET Core?",
+      "answer": "UseStaticFiles() serves static files, UseDefaultFiles() serves default files like index.html"
+    }
+  ],
+  "dotnet": [
+    {
+      "question": "What is the .NET Framework?",
+      "answer": "A software framework developed by Microsoft for building Windows applications"
+    },
+    {
+      "question": "What is .NET Core?",
+      "answer": "A cross-platform, open-source version of .NET Framework"
+    },
+    {
+      "question": "What is the Common Language Runtime (CLR) in .NET?",
+      "answer": "The execution engine that manages memory, security, and code execution"
+    },
+    {
+      "question": "What is the Common Language Infrastructure (CLI) in .NET?",
+      "answer": "An open specification that describes executable code and runtime environment"
+    },
+    {
+      "question": "What is NuGet in .NET?",
+      "answer": "A package manager for .NET that allows you to add, remove, and update libraries"
+    },
+    {
+      "question": "What is the difference between .NET Framework and .NET Core?",
+      "answer": ".NET Framework is Windows-only, .NET Core is cross-platform and open-source"
+    },
+    {
+      "question": "What is the Global Assembly Cache (GAC) in .NET?",
+      "answer": "A machine-wide code cache that stores assemblies shared by multiple applications"
+    },
+    {
+      "question": "What is garbage collection in .NET?",
+      "answer": "An automatic memory management system that reclaims memory from objects no longer in use"
+    },
+    {
+      "question": "What is the Base Class Library (BCL) in .NET?",
+      "answer": "A set of libraries that provide fundamental functionality for .NET applications"
+    },
+    {
+      "question": "What is the purpose of the .csproj file in .NET?",
+      "answer": "An XML file that contains project configuration and references"
+    },
+    {
+      "question": "What is the difference between .NET Standard and .NET Core?",
+      "answer": ".NET Standard is a specification, .NET Core is an implementation"
+    },
+    {
+      "question": "What is the purpose of the SDK in .NET?",
+      "answer": "Software Development Kit that includes tools, libraries, and runtime for building .NET applications"
+    },
+    {
+      "question": "What is Just-In-Time (JIT) compilation in .NET?",
+      "answer": "A process that converts IL (Intermediate Language) code to native machine code at runtime"
+    },
+    {
+      "question": "What is the difference between managed and unmanaged code in .NET?",
+      "answer": "Managed code runs under CLR control, unmanaged code runs directly on the operating system"
+    },
+    {
+      "question": "What is the purpose of assemblies in .NET?",
+      "answer": "Compiled code libraries that contain types, resources, and metadata"
+    },
+    {
+      "question": "What is .NET 5 and later versions?",
+      "answer": "The unified platform that combines .NET Core, .NET Framework, and Xamarin into a single product"
+    },
+    {
+      "question": "What is the difference between .NET Standard and .NET Framework?",
+      "answer": ".NET Standard is a specification, .NET Framework is an implementation"
+    },
+    {
+      "question": "What is the purpose of the Common Type System (CTS) in .NET?",
+      "answer": "To define how types are declared, used, and managed in the runtime"
+    },
+    {
+      "question": "What is the difference between managed and unmanaged code in .NET?",
+      "answer": "Managed code runs under CLR control with automatic memory management, unmanaged code runs directly on OS"
+    },
+    {
+      "question": "What is the purpose of the Intermediate Language (IL) in .NET?",
+      "answer": "A platform-independent code representation that gets compiled to native code by JIT"
+    },
+    {
+      "question": "What is the difference between .NET Framework and .NET 6+?",
+      "answer": ".NET Framework is Windows-only legacy, .NET 6+ is cross-platform and modern"
+    },
+    {
+      "question": "What is the purpose of the Global Assembly Cache (GAC) in .NET?",
+      "answer": "To store shared assemblies that can be used by multiple applications"
+    },
+    {
+      "question": "What is the difference between a DLL and an EXE in .NET?",
+      "answer": "DLL is a library that cannot run standalone, EXE is an executable application"
+    },
+    {
+      "question": "What is the purpose of the AppDomain in .NET Framework?",
+      "answer": "To provide isolation between applications running in the same process"
+    },
+    {
+      "question": "What is the difference between strong-named and regular assemblies in .NET?",
+      "answer": "Strong-named assemblies have a unique identity with public key, regular assemblies do not"
+    },
+    {
+      "question": "What is the purpose of the Reflection API in .NET?",
+      "answer": "To inspect and manipulate types, methods, and properties at runtime"
+    },
+    {
+      "question": "What is the difference between .NET Core and .NET 5+?",
+      "answer": ".NET 5+ is the unified successor to .NET Core, .NET Framework, and Xamarin"
+    },
+    {
+      "question": "What is the purpose of the NuGet package manager in .NET?",
+      "answer": "To manage dependencies and packages for .NET projects"
+    },
+    {
+      "question": "What is the difference between a package and a project reference in .NET?",
+      "answer": "Package reference uses NuGet packages, project reference uses another project in the solution"
+    },
+    {
+      "question": "What is the purpose of the .csproj file in .NET?",
+      "answer": "To define project configuration, dependencies, and build settings"
+    },
+    {
+      "question": "What is the difference between Debug and Release builds in .NET?",
+      "answer": "Debug includes symbols and optimizations disabled, Release is optimized for production"
+    },
+    {
+      "question": "What is the purpose of the using directive in C#/.NET?",
+      "answer": "To import namespaces and avoid fully qualified type names"
+    },
+    {
+      "question": "What is the difference between .NET Standard 2.0 and 2.1?",
+      "answer": "2.1 adds async streams and more APIs, but has fewer platform implementations"
+    },
+    {
+      "question": "What is the purpose of the System namespace in .NET?",
+      "answer": "To provide fundamental types and base classes for .NET applications"
+    },
+    {
+      "question": "What is the difference between .NET Framework 4.x and .NET Core?",
+      "answer": "Framework 4.x is Windows-only and mature, Core is cross-platform and modern"
+    },
+    {
+      "question": "What is the purpose of the RuntimeIdentifier in .NET?",
+      "answer": "To specify the target platform and architecture for publishing"
+    },
+    {
+      "question": "What is the difference between framework-dependent and self-contained deployments in .NET?",
+      "answer": "Framework-dependent requires .NET installed, self-contained includes .NET runtime"
+    },
+    {
+      "question": "What is the purpose of the dotnet CLI in .NET?",
+      "answer": "Command-line interface for building, running, and managing .NET applications"
+    },
+    {
+      "question": "What is the difference between .NET SDK and .NET Runtime?",
+      "answer": "SDK includes tools for development, Runtime is needed only to run applications"
+    },
+    {
+      "question": "What is the purpose of the TargetFramework in .NET projects?",
+      "answer": "To specify which version of .NET the project targets"
+    }
+  ],
+  "machine-learning": [
+    {
+      "question": "What does CPU stand for?",
+      "answer": "Central Processing Unit"
+    },
+    {
+      "question": "What is the main function of a CPU?",
+      "answer": "To execute instructions and perform calculations"
+    },
+    {
+      "question": "What does RAM stand for?",
+      "answer": "Random Access Memory"
+    },
+    {
+      "question": "What is the difference between RAM and storage?",
+      "answer": "RAM is temporary memory that clears when power is off, storage is permanent"
+    },
+    {
+      "question": "What is a GPU?",
+      "answer": "Graphics Processing Unit, specialized for rendering graphics and parallel processing"
+    },
+    {
+      "question": "What is a motherboard?",
+      "answer": "The main circuit board that connects all computer components together"
+    },
+    {
+      "question": "What is the purpose of a hard drive (HDD)?",
+      "answer": "To store data permanently using magnetic storage"
+    },
+    {
+      "question": "What is an SSD?",
+      "answer": "Solid State Drive, faster storage that uses flash memory instead of spinning disks"
+    },
+    {
+      "question": "What is the difference between HDD and SSD?",
+      "answer": "HDD uses spinning magnetic disks, SSD uses flash memory and is much faster"
+    },
+    {
+      "question": "What is a power supply unit (PSU)?",
+      "answer": "A component that converts AC power to DC power for computer components"
+    },
+    {
+      "question": "What is a heat sink?",
+      "answer": "A component that dissipates heat from the CPU or GPU to prevent overheating"
+    },
+    {
+      "question": "What is the purpose of a fan in a computer?",
+      "answer": "To cool components by moving air and removing heat"
+    },
+    {
+      "question": "What is BIOS?",
+      "answer": "Basic Input/Output System, firmware that initializes hardware during boot"
+    },
+    {
+      "question": "What is a USB port used for?",
+      "answer": "Universal Serial Bus, for connecting external devices like keyboards, mice, and storage"
+    },
+    {
+      "question": "What is the purpose of a network card?",
+      "answer": "To connect the computer to a network, either wired (Ethernet) or wireless (Wi-Fi)"
+    },
+    {
+      "question": "What is cache memory?",
+      "answer": "Fast memory located close to the CPU for storing frequently accessed data"
+    },
+    {
+      "question": "What is the difference between L1, L2, and L3 cache?",
+      "answer": "L1 is fastest and smallest, L2 is medium, L3 is largest and slowest but still faster than RAM"
+    },
+    {
+      "question": "What is the purpose of a sound card?",
+      "answer": "To process and output audio signals to speakers or headphones"
+    },
+    {
+      "question": "What is the difference between DDR3 and DDR4 RAM?",
+      "answer": "DDR4 is faster, uses less power, and has higher capacity than DDR3"
+    },
+    {
+      "question": "What is the purpose of a graphics card (GPU)?",
+      "answer": "To render images, videos, and graphics for display on a monitor"
+    },
+    {
+      "question": "What is the difference between integrated and dedicated graphics?",
+      "answer": "Integrated shares system RAM, dedicated has its own video memory"
+    },
+    {
+      "question": "What is the purpose of a network interface card (NIC)?",
+      "answer": "To connect a computer to a network, enabling communication with other devices"
+    },
+    {
+      "question": "What is the difference between PCI and PCIe slots?",
+      "answer": "PCI is older parallel interface, PCIe is newer serial interface with higher bandwidth"
+    },
+    {
+      "question": "What is the purpose of a SATA connector?",
+      "answer": "To connect storage devices like hard drives and SSDs to the motherboard"
+    },
+    {
+      "question": "What is the difference between SATA 2.0 and SATA 3.0?",
+      "answer": "SATA 3.0 has double the transfer speed (6 Gbps vs 3 Gbps)"
+    },
+    {
+      "question": "What is the purpose of thermal paste?",
+      "answer": "To improve heat transfer between CPU/GPU and heat sink"
+    },
+    {
+      "question": "What is the difference between ATX and micro-ATX motherboards?",
+      "answer": "ATX is full-size with more expansion slots, micro-ATX is smaller with fewer slots"
+    },
+    {
+      "question": "What is the purpose of a CMOS battery?",
+      "answer": "To power the BIOS/UEFI settings and system clock when the computer is off"
+    },
+    {
+      "question": "What is the difference between USB 2.0 and USB 3.0?",
+      "answer": "USB 3.0 is 10 times faster (5 Gbps vs 480 Mbps) and has better power management"
+    },
+    {
+      "question": "What is the purpose of a RAID controller?",
+      "answer": "To manage multiple hard drives in a RAID array for performance or redundancy"
+    },
+    {
+      "question": "What is the difference between RAID 0 and RAID 1?",
+      "answer": "RAID 0 stripes data for speed, RAID 1 mirrors data for redundancy"
+    },
+    {
+      "question": "What is the purpose of a CPU cooler?",
+      "answer": "To dissipate heat from the CPU to prevent overheating and thermal throttling"
+    },
+    {
+      "question": "What is the difference between air cooling and liquid cooling?",
+      "answer": "Air cooling uses fans and heat sinks, liquid cooling uses coolant and radiators"
+    },
+    {
+      "question": "What is the purpose of a case fan?",
+      "answer": "To circulate air through the computer case, removing hot air and bringing in cool air"
+    },
+    {
+      "question": "What is the difference between ATX and SFX power supplies?",
+      "answer": "ATX is standard size for regular cases, SFX is smaller for compact cases"
+    },
+    {
+      "question": "What is the purpose of a M.2 slot?",
+      "answer": "To connect high-speed SSDs directly to the motherboard"
+    },
+    {
+      "question": "What is the difference between NVMe and SATA SSDs?",
+      "answer": "NVMe uses PCIe interface and is much faster, SATA is older and slower"
+    },
+    {
+      "question": "What is the purpose of a POST (Power-On Self-Test)?",
+      "answer": "To check hardware components during boot to ensure everything is working"
+    },
+    {
+      "question": "What is the difference between UEFI and BIOS?",
+      "answer": "UEFI is modern with GUI and faster boot, BIOS is legacy text-based firmware"
+    },
+    {
+      "question": "What is the purpose of VRM (Voltage Regulator Module) on a motherboard?",
+      "answer": "To regulate and supply stable voltage to the CPU"
+    }
+  ],
+  "tech-history": [
+    {
+      "question": "When was the first electronic computer (ENIAC) completed?",
+      "answer": "1946"
+    },
+    {
+      "question": "Who is considered the first computer programmer?",
+      "answer": "Ada Lovelace"
+    },
+    {
+      "question": "What was the first programming language?",
+      "answer": "FORTRAN (Formula Translation), developed in 1957"
+    },
+    {
+      "question": "When was the World Wide Web invented?",
+      "answer": "1989 by Tim Berners-Lee"
+    },
+    {
+      "question": "What was the first web browser?",
+      "answer": "WorldWideWeb (later renamed Nexus), created by Tim Berners-Lee in 1990"
+    },
+    {
+      "question": "When was JavaScript created?",
+      "answer": "1995 by Brendan Eich"
+    },
+    {
+      "question": "What was the first computer virus?",
+      "answer": "Creeper, created in 1971"
+    },
+    {
+      "question": "When was the first personal computer (Altair 8800) released?",
+      "answer": "1975"
+    },
+    {
+      "question": "What was the first commercially successful personal computer?",
+      "answer": "Apple II, released in 1977"
+    },
+    {
+      "question": "When was the Internet (ARPANET) first established?",
+      "answer": "1969"
+    },
+    {
+      "question": "What was the first email sent?",
+      "answer": "In 1971, by Ray Tomlinson, who also introduced the @ symbol"
+    },
+    {
+      "question": "When was the first iPhone released?",
+      "answer": "2007"
+    },
+    {
+      "question": "What was the first programming language to use object-oriented concepts?",
+      "answer": "Simula, developed in the 1960s"
+    },
+    {
+      "question": "When was Linux created?",
+      "answer": "1991 by Linus Torvalds"
+    },
+    {
+      "question": "What was the first search engine?",
+      "answer": "Archie, created in 1990"
+    },
+    {
+      "question": "When was the first domain name registered?",
+      "answer": "1985 (symbolics.com)"
+    },
+    {
+      "question": "When was the first computer mouse invented?",
+      "answer": "1964 by Douglas Engelbart"
+    },
+    {
+      "question": "What was the first computer to use a graphical user interface (GUI)?",
+      "answer": "Xerox Alto, developed in 1973"
+    },
+    {
+      "question": "When was the first commercial microprocessor (Intel 4004) released?",
+      "answer": "1971"
+    },
+    {
+      "question": "What was the first computer to be called a 'personal computer'?",
+      "answer": "Altair 8800, released in 1975"
+    },
+    {
+      "question": "When was the first version of Windows released?",
+      "answer": "1985 (Windows 1.0)"
+    },
+    {
+      "question": "What was the first computer to use the mouse and GUI commercially?",
+      "answer": "Apple Macintosh, released in 1984"
+    },
+    {
+      "question": "When was the first version of Microsoft Office released?",
+      "answer": "1989"
+    },
+    {
+      "question": "What was the first web search engine?",
+      "answer": "Archie, created in 1990"
+    },
+    {
+      "question": "When was the first version of HTML published?",
+      "answer": "1993 (HTML 1.0)"
+    },
+    {
+      "question": "What was the first commercial web browser?",
+      "answer": "Netscape Navigator, released in 1994"
+    },
+    {
+      "question": "When was the first version of Java released?",
+      "answer": "1995"
+    },
+    {
+      "question": "What was the first social media platform?",
+      "answer": "Six Degrees, launched in 1997"
+    },
+    {
+      "question": "When was Google founded?",
+      "answer": "1998"
+    },
+    {
+      "question": "What was the first version of Windows NT?",
+      "answer": "Windows NT 3.1, released in 1993"
+    },
+    {
+      "question": "When was the first version of Python released?",
+      "answer": "1991"
+    },
+    {
+      "question": "What was the first computer to use transistors instead of vacuum tubes?",
+      "answer": "TX-0, built at MIT in 1956"
+    },
+    {
+      "question": "When was the first hard disk drive (HDD) invented?",
+      "answer": "1956 by IBM"
+    },
+    {
+      "question": "What was the first computer to use integrated circuits?",
+      "answer": "IBM System/360, introduced in 1964"
+    },
+    {
+      "question": "When was the first version of C programming language created?",
+      "answer": "1972 by Dennis Ritchie"
+    },
+    {
+      "question": "What was the first computer virus to spread widely?",
+      "answer": "Brain, created in 1986"
+    },
+    {
+      "question": "When was the first version of PHP released?",
+      "answer": "1995"
+    },
+    {
+      "question": "What was the first computer to use a floppy disk?",
+      "answer": "IBM System 370, introduced in 1970"
+    },
+    {
+      "question": "When was the first version of CSS released?",
+      "answer": "1996 (CSS 1.0)"
+    },
+    {
+      "question": "What was the first computer to use a touchscreen?",
+      "answer": "PLATO IV, developed in 1972"
+    }
+  ],
+  "computers": [
+    {
+      "question": "What is a CPU?",
+      "answer": "Central Processing Unit, the primary component that executes instructions"
+    },
+    {
+      "question": "What is RAM?",
+      "answer": "Random Access Memory, temporary storage for data and programs currently in use"
+    },
+    {
+      "question": "What is the difference between RAM and ROM?",
+      "answer": "RAM is volatile and can be written to, ROM is non-volatile and read-only"
+    },
+    {
+      "question": "What is an operating system?",
+      "answer": "Software that manages computer hardware and provides services for computer programs"
+    },
+    {
+      "question": "What is binary code?",
+      "answer": "A coding system using only 0s and 1s to represent data and instructions"
+    },
+    {
+      "question": "What is a compiler?",
+      "answer": "A program that translates source code written in a high-level language into machine code"
+    },
+    {
+      "question": "What is an algorithm?",
+      "answer": "A step-by-step procedure for solving a problem or completing a task"
+    },
+    {
+      "question": "What is the difference between hardware and software?",
+      "answer": "Hardware is physical components, software is programs and data"
+    },
+    {
+      "question": "What is a file system?",
+      "answer": "A method of storing and organizing files on a storage device"
+    },
+    {
+      "question": "What is a network protocol?",
+      "answer": "A set of rules that govern how data is transmitted over a network"
+    },
+    {
+      "question": "What is the difference between HTTP and HTTPS?",
+      "answer": "HTTPS is HTTP with encryption (SSL/TLS) for secure communication"
+    },
+    {
+      "question": "What is a database?",
+      "answer": "An organized collection of data stored and accessed electronically"
+    },
+    {
+      "question": "What is cloud computing?",
+      "answer": "Delivery of computing services over the internet instead of local servers"
+    },
+    {
+      "question": "What is the difference between a bit and a byte?",
+      "answer": "A bit is a single binary digit (0 or 1), a byte is 8 bits"
+    },
+    {
+      "question": "What is an API?",
+      "answer": "Application Programming Interface, a set of protocols for building software applications"
+    },
+    {
+      "question": "What is version control?",
+      "answer": "A system that tracks changes to files over time, allowing you to revert to previous versions"
+    },
+    {
+      "question": "What is the difference between a compiler and an interpreter?",
+      "answer": "Compiler translates entire program before execution, interpreter translates line by line during execution"
+    },
+    {
+      "question": "What is the purpose of an operating system kernel?",
+      "answer": "To manage system resources and provide core services to applications"
+    },
+    {
+      "question": "What is the difference between multiprocessing and multithreading?",
+      "answer": "Multiprocessing uses multiple CPUs, multithreading uses multiple threads in one process"
+    },
+    {
+      "question": "What is the purpose of virtual memory?",
+      "answer": "To allow programs to use more memory than physically available by using disk storage"
+    },
+    {
+      "question": "What is the difference between TCP and UDP protocols?",
+      "answer": "TCP is connection-oriented and reliable, UDP is connectionless and faster but unreliable"
+    },
+    {
+      "question": "What is the purpose of DNS (Domain Name System)?",
+      "answer": "To translate domain names into IP addresses"
+    },
+    {
+      "question": "What is the difference between IPv4 and IPv6?",
+      "answer": "IPv4 uses 32-bit addresses, IPv6 uses 128-bit addresses for more addresses"
+    },
+    {
+      "question": "What is the purpose of a firewall?",
+      "answer": "To monitor and control incoming and outgoing network traffic based on security rules"
+    },
+    {
+      "question": "What is the difference between symmetric and asymmetric encryption?",
+      "answer": "Symmetric uses one key, asymmetric uses public/private key pairs"
+    },
+    {
+      "question": "What is the purpose of a router?",
+      "answer": "To forward data packets between computer networks"
+    },
+    {
+      "question": "What is the difference between a switch and a hub?",
+      "answer": "Switch forwards to specific device, hub broadcasts to all devices"
+    },
+    {
+      "question": "What is the purpose of a proxy server?",
+      "answer": "To act as an intermediary between clients and servers, providing caching and filtering"
+    },
+    {
+      "question": "What is the difference between client-side and server-side scripting?",
+      "answer": "Client-side runs in browser, server-side runs on server before sending to client"
+    },
+    {
+      "question": "What is the purpose of load balancing?",
+      "answer": "To distribute network traffic across multiple servers to improve performance and reliability"
+    },
+    {
+      "question": "What is the difference between REST and SOAP APIs?",
+      "answer": "REST is lightweight and uses HTTP, SOAP is XML-based and more structured"
+    },
+    {
+      "question": "What is the purpose of caching?",
+      "answer": "To store frequently accessed data in fast storage for quicker retrieval"
+    },
+    {
+      "question": "What is the difference between synchronous and asynchronous processing?",
+      "answer": "Synchronous blocks until complete, asynchronous allows other operations during processing"
+    },
+    {
+      "question": "What is the purpose of a CDN (Content Delivery Network)?",
+      "answer": "To deliver content from servers geographically close to users for faster access"
+    },
+    {
+      "question": "What is the difference between monolithic and microservices architecture?",
+      "answer": "Monolithic is single application, microservices splits into independent services"
+    },
+    {
+      "question": "What is the purpose of containerization?",
+      "answer": "To package applications with dependencies for consistent deployment across environments"
+    },
+    {
+      "question": "What is the difference between virtualization and containerization?",
+      "answer": "Virtualization virtualizes hardware, containerization virtualizes operating system"
+    },
+    {
+      "question": "What is the purpose of CI/CD (Continuous Integration/Continuous Deployment)?",
+      "answer": "To automate testing and deployment of code changes"
+    },
+    {
+      "question": "What is the difference between Git and GitHub?",
+      "answer": "Git is version control software, GitHub is a hosting service for Git repositories"
+    },
+    {
+      "question": "What is the purpose of a reverse proxy?",
+      "answer": "To receive requests and forward them to backend servers, providing load balancing and security"
+    }
+  ],
+  "algorithms": [
+    {
+      "question": "What is an algorithm?",
+      "answer": "A step-by-step procedure for solving a problem or completing a task"
+    },
+    {
+      "question": "What is Big O notation?",
+      "answer": "A mathematical notation describing the limiting behavior of a function when the argument tends towards infinity"
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "answer": "O(log n)"
+    },
+    {
+      "question": "What is the time complexity of bubble sort?",
+      "answer": "O(n²)"
+    },
+    {
+      "question": "What is a data structure?",
+      "answer": "A way of organizing and storing data in a computer so it can be accessed and modified efficiently"
+    },
+    {
+      "question": "What is the difference between a stack and a queue?",
+      "answer": "Stack is LIFO (Last In First Out), Queue is FIFO (First In First Out)"
+    },
+    {
+      "question": "What is a linked list?",
+      "answer": "A linear data structure where elements are stored in nodes, each pointing to the next node"
+    },
+    {
+      "question": "What is a binary tree?",
+      "answer": "A tree data structure where each node has at most two children"
+    },
+    {
+      "question": "What is recursion?",
+      "answer": "A programming technique where a function calls itself to solve a problem"
+    },
+    {
+      "question": "What is dynamic programming?",
+      "answer": "A method for solving complex problems by breaking them down into simpler subproblems"
+    },
+    {
+      "question": "What is the difference between depth-first and breadth-first search?",
+      "answer": "DFS explores as far as possible before backtracking, BFS explores all neighbors before moving to next level"
+    },
+    {
+      "question": "What is a hash table?",
+      "answer": "A data structure that implements an associative array using a hash function"
+    },
+    {
+      "question": "What is the time complexity of quicksort on average?",
+      "answer": "O(n log n)"
+    },
+    {
+      "question": "What is the difference between an array and a linked list?",
+      "answer": "Arrays have fixed size and direct access, linked lists are dynamic but require sequential access"
+    },
+    {
+      "question": "What is a graph in computer science?",
+      "answer": "A data structure consisting of nodes (vertices) connected by edges"
+    },
+    {
+      "question": "What is the purpose of sorting algorithms?",
+      "answer": "To arrange data in a particular order (ascending or descending) for easier searching and processing"
+    },
+    {
+      "question": "What is the time complexity of merge sort?",
+      "answer": "O(n log n) in all cases"
+    },
+    {
+      "question": "What is the difference between selection sort and insertion sort?",
+      "answer": "Selection sort finds minimum and swaps, insertion sort builds sorted array one element at a time"
+    },
+    {
+      "question": "What is the purpose of a hash function?",
+      "answer": "To map data of arbitrary size to fixed-size values for efficient lookup"
+    },
+    {
+      "question": "What is the difference between a stack and a queue data structure?",
+      "answer": "Stack is LIFO (Last In First Out), Queue is FIFO (First In First Out)"
+    },
+    {
+      "question": "What is the time complexity of linear search?",
+      "answer": "O(n) - checks each element sequentially"
+    },
+    {
+      "question": "What is the purpose of a binary search tree?",
+      "answer": "To enable efficient searching, insertion, and deletion with O(log n) average time complexity"
+    },
+    {
+      "question": "What is the difference between preorder, inorder, and postorder tree traversal?",
+      "answer": "Preorder: root-left-right, Inorder: left-root-right, Postorder: left-right-root"
+    },
+    {
+      "question": "What is the purpose of dynamic programming?",
+      "answer": "To solve complex problems by breaking them into simpler subproblems and storing results"
+    },
+    {
+      "question": "What is the difference between greedy and dynamic programming algorithms?",
+      "answer": "Greedy makes locally optimal choices, dynamic programming considers all possibilities"
+    },
+    {
+      "question": "What is the time complexity of quicksort in worst case?",
+      "answer": "O(n²) when pivot is always smallest or largest element"
+    },
+    {
+      "question": "What is the purpose of a priority queue?",
+      "answer": "To store elements with priorities and always retrieve the highest priority element"
+    },
+    {
+      "question": "What is the difference between BFS and DFS graph traversal?",
+      "answer": "BFS explores level by level, DFS explores as deep as possible before backtracking"
+    },
+    {
+      "question": "What is the purpose of memoization?",
+      "answer": "To cache results of expensive function calls to avoid redundant calculations"
+    },
+    {
+      "question": "What is the time complexity of heap sort?",
+      "answer": "O(n log n) in all cases"
+    },
+    {
+      "question": "What is the difference between a min heap and a max heap?",
+      "answer": "Min heap has smallest at root, max heap has largest at root"
+    },
+    {
+      "question": "What is the purpose of the Dijkstra's algorithm?",
+      "answer": "To find the shortest path between nodes in a weighted graph"
+    },
+    {
+      "question": "What is the difference between a directed and undirected graph?",
+      "answer": "Directed has one-way edges, undirected has bidirectional edges"
+    },
+    {
+      "question": "What is the purpose of the A* search algorithm?",
+      "answer": "To find the shortest path using heuristics to guide the search"
+    },
+    {
+      "question": "What is the time complexity of finding an element in a hash table?",
+      "answer": "O(1) average case, O(n) worst case with collisions"
+    },
+    {
+      "question": "What is the difference between a balanced and unbalanced binary tree?",
+      "answer": "Balanced has similar height in left and right subtrees, unbalanced can be very skewed"
+    },
+    {
+      "question": "What is the purpose of the Floyd-Warshall algorithm?",
+      "answer": "To find shortest paths between all pairs of vertices in a weighted graph"
+    },
+    {
+      "question": "What is the difference between stable and unstable sorting algorithms?",
+      "answer": "Stable preserves relative order of equal elements, unstable does not"
+    },
+    {
+      "question": "What is the purpose of the Kruskal's algorithm?",
+      "answer": "To find the minimum spanning tree of a connected weighted graph"
+    },
+    {
+      "question": "What is the time complexity of building a heap from an array?",
+      "answer": "O(n) using bottom-up heap construction"
+    }
+  ]
+}
+
