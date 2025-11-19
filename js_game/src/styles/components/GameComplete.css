@@ -2,56 +2,76 @@
 
 .game-complete {
   background: rgba(0, 0, 0, 0.3);
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   border-radius: 8px;
-  margin: 20px 0;
+  margin: 20px 0 80px 0;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .game-complete h2 {
-  color: #000;
-  font-weight: 900;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
   margin: 0 0 15px 0;
+  font-weight: 700;
+  font-family: 'Futura', 'Century Gothic', 'Arial Narrow', sans-serif;
+  letter-spacing: 0.08em;
+  color: #7a8db8;
 }
 
 .final-score {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 900;
-  color: #000;
+  color: #b8d4f5;
   margin: 10px 0;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .final-time {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin: 10px 0;
-  color: #000;
+  color: #b8d4f5;
   font-weight: 700;
 }
 
 .game-complete button {
-  background: #28a745;
-  color: #000;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  color: #00D9FF;
+  border: 2px solid #818CF8;
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
-  font-size: 1em;
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
-  letter-spacing: 0.02em;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Futura', 'Century Gothic', 'Arial Narrow', sans-serif;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.game-complete button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(129, 140, 248, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.game-complete button:hover:not(:disabled)::before {
+  left: 100%;
 }
 
 .game-complete button:hover:not(:disabled) {
-  background: #218838;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border-color: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
+  border-color: #0093C7;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(129, 140, 248, 0.4), 0 0 30px rgba(129, 140, 248, 0.2);
 }
 
 .game-complete button:disabled {
@@ -61,10 +81,34 @@
 }
 
 /* Responsive Breakpoints */
+@media (max-width: 320px) {
+  .game-complete {
+    padding: 15px;
+    margin: 15px 0 60px 0;
+  }
+  
+  .game-complete h2 {
+    font-size: 1.1rem;
+  }
+  
+  .final-score {
+    font-size: 1.2rem;
+  }
+  
+  .final-time {
+    font-size: 1rem;
+  }
+  
+  .game-complete button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
 @media (min-width: 2560px) {
   .game-complete button {
     padding: 10px 20px;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: 700;
   }
 }

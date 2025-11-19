@@ -1,0 +1,49 @@
+/* 
+  CodeRecall Underground Color Palette
+  
+  This palette integrates:
+  - CodeSpinner purple (#818CF8)
+  - TrueCoders blue (#0093C7)
+  - Underground tech aesthetic
+*/
+
+:root {
+  /* Brand Colors */
+  --color-codespinner-purple: #818CF8;
+  --color-truecoders-blue: #0093C7;
+  --color-accent-cyan: #00D9FF;
+  
+  /* Dark Backgrounds */
+  --color-bg-darkest: #1a1a2e;
+  --color-bg-dark: #2a2a3e;
+  --color-bg-overlay: rgba(0, 0, 0, 0.3);
+  --color-bg-overlay-heavy: rgba(0, 0, 0, 0.7);
+  
+  /* Text Colors */
+  --color-text-primary: #b8d4f5;
+  --color-text-secondary: #a5a8c4;
+  --color-text-muted: #7a8db8;
+  --color-text-bright: #e8ecff;
+  
+  /* UI Colors */
+  --color-border-light: rgba(129, 140, 248, 0.2);
+  --color-border-medium: rgba(129, 140, 248, 0.4);
+  --color-border-bright: rgba(129, 140, 248, 0.6);
+  
+  /* Success/Action Colors */
+  --color-success: #28a745;
+  --color-success-light: #4ade80;
+  --color-success-bg: rgba(40, 167, 69, 0.2);
+  
+  /* Gradient for brand animation */
+  --gradient-brand: linear-gradient(90deg, 
+    var(--color-bg-dark) 0%, 
+    var(--color-bg-dark) 30%, 
+    var(--color-codespinner-purple) 40%, 
+    var(--color-truecoders-blue) 50%, 
+    var(--color-codespinner-purple) 60%, 
+    var(--color-bg-dark) 70%, 
+    var(--color-bg-dark) 100%
+  );
+}
+

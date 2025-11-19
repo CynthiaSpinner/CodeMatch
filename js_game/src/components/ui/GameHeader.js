@@ -7,7 +7,7 @@ const GameHeader = ({ onBack, categoryInfo, disabled }) => {
     <div className="game-header">
       <BackButton onClick={onBack} disabled={disabled} />
       <div className="header-title-section">
-        <h1>CodeMatch</h1>
+        <h1>CodeRecall</h1>
         {categoryInfo && (
           <div className="category-label">
             {categoryInfo.main}: {categoryInfo.sub}

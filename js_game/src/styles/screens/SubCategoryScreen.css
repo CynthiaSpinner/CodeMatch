@@ -2,20 +2,19 @@
 
 .subcategory-screen {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   padding: 0;
-  padding-bottom: 140px;
+  padding-bottom: 180px;
   position: relative;
 }
 
 .subcategory-header-container {
   width: 100%;
-  padding: 20px;
-  padding-bottom: 80px;
+  padding: 15px 20px 20px 20px;
   box-sizing: border-box;
 }
 
@@ -27,7 +26,7 @@
   gap: 15px;
   margin-bottom: 20px;
   position: relative;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -35,22 +34,27 @@
   max-width: 1200px;
   width: 100%;
   text-align: center;
-  padding: 40px 20px;
+  padding: 0px 0px 20px 0px;
   position: relative;
 }
 
 .subcategory-title {
-  font-size: 3.5rem;
-  color: #000;
-  margin-bottom: 10px;
-  text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(129, 140, 248, 0.5), 0 0 25px rgba(129, 140, 248, 0.3), 0 0 30px rgba(0, 147, 199, 0.15);
-  font-weight: 900;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  margin-top: 0;
+  padding: 0 20px;
+  font-weight: 700;
+  font-family: 'Futura', 'Century Gothic', 'Arial Narrow', sans-serif;
+  letter-spacing: 0.08em;
+  color: #7a8db8;
 }
 
 .subcategory-subtitle {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #a5a8c4;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding: 0 20px;
   font-weight: 600;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -59,14 +63,25 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
-  margin-top: 40px;
+  margin-top: 0;
+  margin-bottom: 40px;
   padding: 0 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 0;
+  margin-right: 0;
   box-sizing: border-box;
 }
 
 /* Responsive Breakpoints */
+@media (min-width: 768px) {
+  .subcategory-title {
+    font-size: calc(1.8rem + (2.2rem - 1.8rem) * ((100vw - 768px) / (1024px - 768px)));
+  }
+  
+  .subcategory-subtitle {
+    font-size: calc(1rem + (1.1rem - 1rem) * ((100vw - 768px) / (1024px - 768px)));
+  }
+}
+
 @media (min-width: 1024px) {
   .subcategory-screen {
     padding-bottom: 0;
@@ -77,19 +92,18 @@
   }
   
   .subcategory-header-container {
-    padding: 15px 30px 20px 30px;
+    padding: 15px 20px 20px 20px;
     max-width: 100%;
-    padding-top: 40px;
   }
   
   .subcategory-header {
     gap: 8px;
     margin-bottom: 10px;
-    padding: 0 30px;
+    padding: 0;
   }
   
   .subcategory-content {
-    padding: 2px 20px 2px 20px;
+    padding: 20px 20px 80px 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -100,46 +114,68 @@
   }
   
   .subcategory-title {
-    font-size: 1.6rem;
-    margin-bottom: 0;
+    font-size: 2.2rem;
+    margin-bottom: 12px;
     margin-top: 0;
     line-height: 1.2;
+    padding: 0;
   }
   
   .subcategory-subtitle {
-    font-size: 0.85rem;
-    margin-bottom: 2px;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
     margin-top: 0;
-    line-height: 1.2;
+    line-height: 1.3;
+    padding: 0;
   }
   
   .subcategory-grid {
     margin-top: 0;
-    margin-bottom: 0;
-    gap: 8px;
-    padding: 0;
+    margin-bottom: 60px;
+    gap: 18px;
+    padding: 0 20px;
   }
 }
 
 @media (min-width: 1440px) {
   .subcategory-header-container {
-    padding: 15px 30px 20px 30px;
+    padding: 15px 20px 20px 20px;
     max-width: 100%;
-    padding-top: 40px;
   }
   
   .subcategory-header {
     gap: 8px;
     margin-bottom: 10px;
-    padding: 0 30px;
+    padding: 0;
+  }
+  
+  .subcategory-content {
+    padding: calc(20px + (0px - 20px) * ((100vw - 1440px) / (2560px - 1440px))) 20px calc(50px + (60px - 50px) * ((100vw - 1440px) / (2560px - 1440px))) 20px;
+  }
+  
+  .subcategory-title {
+    font-size: calc(2.2rem + (3rem - 2.2rem) * ((100vw - 1440px) / (2560px - 1440px)));
+    margin-bottom: calc(12px + (20px - 12px) * ((100vw - 1440px) / (2560px - 1440px)));
+    padding: 0;
+  }
+  
+  .subcategory-subtitle {
+    font-size: calc(1.1rem + (1.5rem - 1.1rem) * ((100vw - 1440px) / (2560px - 1440px)));
+    margin-bottom: calc(25px + (40px - 25px) * ((100vw - 1440px) / (2560px - 1440px)));
+    padding: 0;
+  }
+  
+  .subcategory-grid {
+    gap: calc(18px + (25px - 18px) * ((100vw - 1440px) / (2560px - 1440px)));
+    margin-bottom: calc(30px + (40px - 30px) * ((100vw - 1440px) / (2560px - 1440px)));
+    padding: 0 20px;
   }
 }
 
 @media (min-width: 2560px) {
   .subcategory-header-container {
-    padding: 15px 30px 20px 30px;
+    padding: 20px 20px 20px 20px;
     max-width: 100%;
-    padding-top: 50px;
   }
   
   .subcategory-header {
@@ -154,34 +190,91 @@
   
   .subcategory-content {
     max-width: 1440px;
-    margin: calc(25vh - 50px) auto 0 auto;
+    padding: 0px 20px 60px 20px;
     justify-content: flex-start;
-    padding-top: 0;
   }
   
   .subcategory-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    padding: 0;
   }
   
   .subcategory-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    padding: 0;
   }
   
   .subcategory-grid {
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .subcategory-header-container {
+    padding: 15px 15px 20px 15px;
+  }
+  
+  .subcategory-header {
+    padding: 0;
+  }
+  
+  .subcategory-content {
+    padding: 0px 0px 20px 0px;
+  }
+  
+  .subcategory-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 0 15px;
+  }
+  
+  .subcategory-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    padding: 0 15px;
+  }
+  
+  .subcategory-grid {
+    margin-bottom: 35px;
+    padding: 0 15px;
   }
 }
 
 @media (max-width: 320px) {
+  .subcategory-header-container {
+    padding: 15px 15px 15px 15px;
+  }
+  
+  .subcategory-header {
+    padding: 0;
+  }
+  
   .subcategory-content {
-    padding: 40px 15px;
+    padding: 0px 0px 15px 0px;
+  }
+  
+  .subcategory-title {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    padding: 0 15px;
+  }
+  
+  .subcategory-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+    padding: 0 15px;
   }
   
   .subcategory-grid {
-    padding: 0 20px;
     gap: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0 15px;
   }
 }
 

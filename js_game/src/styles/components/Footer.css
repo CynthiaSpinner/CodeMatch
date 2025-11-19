@@ -335,6 +335,8 @@
     margin: 0;
     padding: 0;
     flex-shrink: 0;
+    align-self: flex-end;
+    transform: translateY(calc(0.5px + (0px - 0.5px) * ((100vw - 768px) / (1024px - 768px))));
   }
   
   .footer-brand-letter {
@@ -366,6 +368,8 @@
     margin: 0;
     padding: 0;
     flex-shrink: 0;
+    align-self: flex-end;
+    transform: translateY(calc(1.5px + (2px - 1.5px) * ((100vw - 768px) / (1024px - 768px))));
   }
   
   .truecoders-logo {
@@ -401,6 +405,8 @@
     margin: 0;
     padding: 0;
     flex-shrink: 0;
+    align-self: flex-end;
+    transform: translateY(calc(0px + (1px - 0px) * ((100vw - 1024px) / (1440px - 1024px))));
   }
   
   .footer-brand-letter {
@@ -432,6 +438,8 @@
     margin: 0;
     padding: 0;
     flex-shrink: 0;
+    align-self: flex-end;
+    transform: translateY(calc(2px + (3px - 2px) * ((100vw - 1024px) / (1440px - 1024px))));
   }
   
   .truecoders-logo {
@@ -469,6 +477,8 @@
     margin: 0;
     padding: 0;
     flex-shrink: 0;
+    align-self: flex-end;
+    transform: translateY(1px);
   }
   
   .footer-brand-letter {
@@ -500,6 +510,8 @@
     margin: 0;
     padding: 0;
     flex-shrink: 0;
+    align-self: flex-end;
+    transform: translateY(calc(3px + (4px - 3px) * ((100vw - 1440px) / (2560px - 1440px))));
   }
   
   .truecoders-logo {
@@ -518,8 +530,11 @@
 
 @media (min-width: 2560px) {
   .app-footer {
-    width: 2540px;
+    width: 100%;
+    max-width: 100vw;
     padding: 50px 10px;
+    left: 0;
+    transform: none;
   }
   
   .footer-content {
@@ -542,6 +557,8 @@
     padding: 0;
     flex-shrink: 0;
     height: 45px;
+    align-self: flex-end;
+    transform: translateY(1px);
   }
   
   .footer-brand-letter {
@@ -566,7 +583,7 @@
   
   .truecoders-logo-link {
     align-self: flex-end;
-    transform: translateY(4px);
+    transform: translateY(7px);
   }
   
   .truecoders-logo {
@@ -590,11 +607,13 @@
     white-space: nowrap;
     flex-shrink: 0;
   }
-  
+   
   .truecoders-logo-link {
     margin: 0;
     padding: 0;
     flex-shrink: 0;
+    align-self: flex-end;
+    transform: translateY(4px);
   }
 }
 

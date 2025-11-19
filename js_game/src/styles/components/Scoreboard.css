@@ -4,7 +4,7 @@
   display: flex;
   gap: 20px;
   margin: 20px 0 20px 0;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   flex-wrap: wrap;
   justify-content: center;
   box-shadow: none;
@@ -57,33 +57,56 @@
 }
 
 /* Responsive Breakpoints */
+@media (max-width: 320px) {
+  .scoreboard {
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .score,
+  .best-score,
+  .timer {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+  
+  .score,
+  .best-score {
+    min-width: 100px;
+  }
+  
+  .timer {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1440px) {
   .scoreboard {
     gap: 10px;
     margin: 68px 0 25px 0;
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
   
   .score,
   .best-score,
   .timer {
     padding: 6px 12px;
-    font-size: 0.85em;
+    font-size: 0.85rem;
   }
 }
 
 @media (min-width: 2560px) {
   .scoreboard {
     gap: 15px;
-    margin: 88px 0 25px 0;
-    font-size: 0.95em;
+    margin: 20px 0 25px 0;
+    font-size: 0.95rem;
   }
   
   .score,
   .best-score,
   .timer {
     padding: 10px 15px;
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
   
   .timer {

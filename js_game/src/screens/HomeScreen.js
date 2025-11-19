@@ -43,7 +43,7 @@ const HomeScreen = ({ onSelectTopic }) => {
       color: '#4A90E2',
       icon: '◊',
       subCategories: [
-        { id: 'machine-learning', name: 'Computer Hardware', icon: '◼', color: '#FF6B6B' },
+        { id: 'machine-learning', name: 'Computer Hardware', icon: '◼', color: '#FFB74D' },
         { id: 'tech-history', name: 'Tech History', icon: '◈', color: '#4ECDC4' },
         { id: 'computers', name: 'Computers', icon: '◉', color: '#4A90E2' },
         { id: 'algorithms', name: 'Algorithms', icon: '◊', color: '#95E1D3' }
@@ -77,13 +77,13 @@ const HomeScreen = ({ onSelectTopic }) => {
     <div className="home-screen">
       <div className="home-header">
         <div className="home-header-content">
-          <h2 className="home-header-title">CodeMatch</h2>
+          <h2 className="home-header-title">CodeRecall</h2>
           <p className="home-header-subtitle">Test your knowledge with this interactive memory matching game</p>
         </div>
       </div>
       <div className="home-content">
-        <h1 className="home-title">Welcome</h1>
-        <p className="home-subtitle">Choose a topic to start learning!</p>
+        <h1 className="home-title">Choose Your Challenge</h1>
+        <p className="home-subtitle">Select a topic to start matching!</p>
         
         <div className="topics-grid">
           {mainTopics.map(topic => (

@@ -60,7 +60,7 @@ const DataService = (config = {}) => {
         'machine-learning': {
             name: 'Computer Hardware',
             icon: '◼',
-            color: '#FF6B6B'
+            color: '#FFB74D'
         },
         'tech-history': {
             name: 'Tech History',

@@ -290,7 +290,7 @@ function App() {
           if (validCards.length >= 8) {
             setCards(validCards);
             console.log('✅ New game loaded successfully with', validCards.length, 'cards');
-            setLoading(false);
+        setLoading(false);        
             setIsResetting(false);
             return; // Success - exit function
           } else {
@@ -324,7 +324,7 @@ function App() {
 
         const categoryInfo = getCategoryInfo(selectedTopic);
 
-        return (
+  return (
           <GameScreen
             categoryInfo={categoryInfo}
             onBack={handleBackToHome}
@@ -346,7 +346,7 @@ function App() {
             isResetting={isResetting}
             onResetGame={resetGame}
           />
-        );
+  );
 }
 
 export default App;

@@ -1,0 +1,161 @@
+/* Heading Group Component - Consistent Typography System */
+
+.heading-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.heading-align-center {
+  text-align: center;
+  align-items: center;
+}
+
+.heading-align-left {
+  text-align: left;
+  align-items: flex-start;
+}
+
+/* Title Styles */
+.heading-title {
+  margin: 0;
+  font-weight: 700;
+  font-family: 'Futura', 'Century Gothic', 'Arial Narrow', sans-serif;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+
+/* Subtitle Styles */
+.heading-subtitle {
+  margin: 0;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+/* Primary Variant - Large page headings */
+.heading-group-primary .heading-title {
+  font-size: 2.8rem;
+  color: #7a8db8;
+}
+
+.heading-group-primary .heading-subtitle {
+  font-size: 1.2rem;
+  color: #a5a8c4;
+}
+
+/* Secondary Variant - Section headings */
+.heading-group-secondary .heading-title {
+  font-size: 2rem;
+  color: #818CF8;
+}
+
+.heading-group-secondary .heading-subtitle {
+  font-size: 1rem;
+  color: #a5a8c4;
+}
+
+/* Brand Variant - For CodeRecall branding with animation */
+.heading-group-brand .heading-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #2a2a3e 0%, #2a2a3e 30%, #818CF8 40%, #0093C7 50%, #818CF8 60%, #2a2a3e 70%, #2a2a3e 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: brandGlint 6s ease-in-out infinite alternate;
+}
+
+.heading-group-brand .heading-subtitle {
+  font-size: 0.9rem;
+  color: #a5a8c4;
+}
+
+@keyframes brandGlint {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+
+/* Responsive Typography */
+@media (min-width: 768px) {
+  .heading-group-primary .heading-title {
+    font-size: 3.2rem;
+  }
+  
+  .heading-group-primary .heading-subtitle {
+    font-size: 1.4rem;
+  }
+  
+  .heading-group-secondary .heading-title {
+    font-size: 2.2rem;
+  }
+  
+  .heading-group-brand .heading-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-group {
+    gap: 16px;
+  }
+  
+  .heading-group-primary .heading-title {
+    font-size: 3.5rem;
+  }
+  
+  .heading-group-primary .heading-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .heading-group-secondary .heading-title {
+    font-size: 2.4rem;
+  }
+  
+  .heading-group-brand .heading-title {
+    font-size: 3rem;
+  }
+  
+  .heading-group-brand .heading-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .heading-group-primary .heading-title {
+    font-size: 4rem;
+  }
+  
+  .heading-group-primary .heading-subtitle {
+    font-size: 1.6rem;
+  }
+  
+  .heading-group-brand .heading-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .heading-group-primary .heading-title {
+    font-size: 4.5rem;
+  }
+  
+  .heading-group-primary .heading-subtitle {
+    font-size: 1.8rem;
+  }
+  
+  .heading-group-brand .heading-title {
+    font-size: 4rem;
+  }
+  
+  .heading-group-brand .heading-subtitle {
+    font-size: 1.2rem;
+  }
+}
+

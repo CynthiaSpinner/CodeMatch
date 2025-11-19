@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  background-color: #282c34;
+  background-color: var(--color-bg-darkest);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -14,7 +14,7 @@ html, body {
 
 #root {
   min-height: 100vh;
-  background-color: #282c34;
+  background-color: var(--color-bg-darkest);
 }
 
 code {
