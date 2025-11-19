@@ -1,0 +1,658 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+.app-footer {
+  width: 300px;
+  padding: 20px 10px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  z-index: 100;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  max-width: 100%;
+  margin: 0 auto;
+  width: auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.footer-branding {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin: 0 auto 10px auto;
+  padding: 0;
+}
+
+.footer-brand-letter {
+  font-size: 1.5rem;
+  color: #818cf8;
+  text-shadow: 0 0 8px rgba(129, 140, 248, 0.3), 0 0 15px rgba(129, 140, 248, 0.2);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-brand-gradient {
+  font-size: 1.2rem;
+  background: linear-gradient(90deg, #818cf8 0%, #a5b4fc 50%, #818cf8 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: elegantFlow 8s ease infinite;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-brand-amp {
+  font-size: 1.1rem;
+  color: #818cf8;
+  opacity: 0.8;
+  margin: 0 4px;
+  text-shadow: 0 0 6px rgba(129, 140, 248, 0.3);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-brand-letter-small {
+  font-size: 1.1rem;
+  color: #818cf8;
+  opacity: 0.8;
+  text-shadow: 0 0 6px rgba(129, 140, 248, 0.3);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-brand-gradient-small {
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, rgba(129, 140, 248, 0.8) 0%, rgba(165, 180, 252, 0.8) 50%, rgba(129, 140, 248, 0.8) 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: elegantFlow 8s ease infinite;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+@keyframes elegantFlow {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.footer-affiliation {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.affiliation-text,
+.footer-text {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  letter-spacing: 0;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  text-align: center;
+}
+
+.affiliation-text {
+  letter-spacing: 0.1em;
+  font-style: italic;
+  font-size: 10px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+
+.truecoders-logo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  margin: 0 auto 10px auto;
+}
+
+.truecoders-logo-link:hover {
+  opacity: 0.8;
+}
+
+.truecoders-logo {
+  height: 24px;
+  width: auto;
+  max-width: 140px;
+  opacity: 0.9;
+}
+
+@media (min-width: 321px) and (max-width: 374px) {
+  .app-footer {
+    width: calc(299.993px + (355px - 299.993px) * ((100vw - 320px) / (375px - 320px)));
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-content {
+    gap: calc(8px + (10px - 8px) * ((100vw - 320px) / (375px - 320px)));
+  }
+  
+  .footer-branding {
+    font-size: calc(0.9rem + (1rem - 0.9rem) * ((100vw - 320px) / (375px - 320px)));
+  }
+  
+  .footer-brand-letter {
+    font-size: calc(0.9rem + (1.6rem - 0.9rem) * ((100vw - 320px) / (375px - 320px)));
+  }
+  
+  .footer-brand-gradient {
+    font-size: calc(0.75rem + (1.3rem - 0.75rem) * ((100vw - 320px) / (375px - 320px)));
+  }
+  
+  .footer-brand-amp,
+  .footer-brand-letter-small {
+    font-size: calc(0.75rem + (1.2rem - 0.75rem) * ((100vw - 320px) / (375px - 320px)));
+  }
+  
+  .footer-brand-gradient-small {
+    font-size: calc(0.75rem + (1.2rem - 0.75rem) * ((100vw - 320px) / (375px - 320px)));
+  }
+  
+  .footer-affiliation {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .affiliation-text {
+    font-size: calc(0.65rem + (11px - 0.65rem) * ((100vw - 320px) / (375px - 320px)));
+  }
+  
+  .truecoders-logo {
+    height: calc(18px + (22px - 18px) * ((100vw - 320px) / (375px - 320px)));
+    max-width: calc(100px + (120px - 100px) * ((100vw - 320px) / (375px - 320px)));
+  }
+  
+  .footer-text {
+    font-size: calc(0.7rem + (11px - 0.7rem) * ((100vw - 320px) / (375px - 320px)));
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .app-footer {
+    width: calc(355px + (405px - 355px) * ((100vw - 375px) / (425px - 375px)));
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-content {
+    gap: calc(10px + (12px - 10px) * ((100vw - 375px) / (425px - 375px)));
+  }
+  
+  .footer-branding {
+    font-size: calc(1rem + (1.1rem - 1rem) * ((100vw - 375px) / (425px - 375px)));
+  }
+  
+  .footer-brand-letter {
+    font-size: calc(1.6rem + (1.7rem - 1.6rem) * ((100vw - 375px) / (425px - 375px)));
+  }
+  
+  .footer-brand-gradient {
+    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 375px) / (425px - 375px)));
+  }
+  
+  .footer-brand-amp,
+  .footer-brand-letter-small {
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 375px) / (425px - 375px)));
+  }
+  
+  .footer-brand-gradient-small {
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 375px) / (425px - 375px)));
+  }
+  
+  .footer-affiliation {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .affiliation-text {
+    font-size: calc(11px + (12px - 11px) * ((100vw - 375px) / (425px - 375px)));
+  }
+  
+  .truecoders-logo {
+    height: calc(22px + (24px - 22px) * ((100vw - 375px) / (425px - 375px)));
+    max-width: calc(120px + (140px - 120px) * ((100vw - 375px) / (425px - 375px)));
+  }
+  
+  .footer-text {
+    font-size: calc(11px + (12px - 11px) * ((100vw - 375px) / (425px - 375px)));
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .app-footer {
+    width: calc(405px + (748px - 405px) * ((100vw - 425px) / (768px - 425px)));
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-content {
+    gap: calc(12px + (12px - 12px) * ((100vw - 425px) / (768px - 425px)));
+  }
+  
+  .footer-branding {
+    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 425px) / (768px - 425px)));
+  }
+  
+  .footer-brand-letter {
+    font-size: calc(1.7rem + (1.5rem - 1.7rem) * ((100vw - 425px) / (768px - 425px)));
+  }
+  
+  .footer-brand-gradient {
+    font-size: calc(1.4rem + (1.2rem - 1.4rem) * ((100vw - 425px) / (768px - 425px)));
+  }
+  
+  .footer-brand-amp,
+  .footer-brand-letter-small {
+    font-size: calc(1.3rem + (1.1rem - 1.3rem) * ((100vw - 425px) / (768px - 425px)));
+  }
+  
+  .footer-brand-gradient-small {
+    font-size: calc(1.3rem + (1.1rem - 1.3rem) * ((100vw - 425px) / (768px - 425px)));
+  }
+  
+  .footer-affiliation {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .affiliation-text {
+    font-size: calc(12px + (12px - 12px) * ((100vw - 425px) / (768px - 425px)));
+  }
+  
+  .truecoders-logo {
+    height: calc(24px + (24px - 24px) * ((100vw - 425px) / (768px - 425px)));
+    max-width: calc(140px + (140px - 140px) * ((100vw - 425px) / (768px - 425px)));
+  }
+  
+  .footer-text {
+    font-size: calc(12px + (12px - 12px) * ((100vw - 425px) / (768px - 425px)));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .app-footer {
+    width: calc(748px + (1004px - 748px) * ((100vw - 768px) / (1024px - 768px)));
+    padding: calc(25px + (30px - 25px) * ((100vw - 768px) / (1024px - 768px))) 10px;
+  }
+  
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+  }
+  
+  .footer-branding {
+    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 768px) / (1024px - 768px)));
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  
+  .footer-brand-letter {
+    font-size: calc(1.5rem + (1.6rem - 1.5rem) * ((100vw - 768px) / (1024px - 768px)));
+  }
+  
+  .footer-brand-gradient {
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 768px) / (1024px - 768px)));
+  }
+  
+  .footer-brand-amp,
+  .footer-brand-letter-small {
+    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 768px) / (1024px - 768px)));
+  }
+  
+  .footer-brand-gradient-small {
+    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 768px) / (1024px - 768px)));
+  }
+  
+  .affiliation-text {
+    font-size: calc(11px + (12px - 11px) * ((100vw - 768px) / (1024px - 768px)));
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .truecoders-logo-link {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  
+  .truecoders-logo {
+    height: calc(22px + (24px - 22px) * ((100vw - 768px) / (1024px - 768px)));
+    max-width: calc(130px + (140px - 130px) * ((100vw - 768px) / (1024px - 768px)));
+  }
+  
+  .footer-text {
+    font-size: calc(11px + (12px - 11px) * ((100vw - 768px) / (1024px - 768px)));
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .app-footer {
+    width: calc(1004px + (1420px - 1004px) * ((100vw - 1024px) / (1440px - 1024px)));
+    padding: calc(30px + (35px - 30px) * ((100vw - 1024px) / (1440px - 1024px))) 10px;
+  }
+  
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+  }
+  
+  .footer-branding {
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 1024px) / (1440px - 1024px)));
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  
+  .footer-brand-letter {
+    font-size: calc(1.6rem + (1.7rem - 1.6rem) * ((100vw - 1024px) / (1440px - 1024px)));
+  }
+  
+  .footer-brand-gradient {
+    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1024px) / (1440px - 1024px)));
+  }
+  
+  .footer-brand-amp,
+  .footer-brand-letter-small {
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 1024px) / (1440px - 1024px)));
+  }
+  
+  .footer-brand-gradient-small {
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 1024px) / (1440px - 1024px)));
+  }
+  
+  .affiliation-text {
+    font-size: calc(12px + (13px - 12px) * ((100vw - 1024px) / (1440px - 1024px)));
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .truecoders-logo-link {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  
+  .truecoders-logo {
+    height: calc(24px + (26px - 24px) * ((100vw - 1024px) / (1440px - 1024px)));
+    max-width: calc(140px + (150px - 140px) * ((100vw - 1024px) / (1440px - 1024px)));
+  }
+  
+  .footer-text {
+    font-size: calc(12px + (13px - 12px) * ((100vw - 1024px) / (1440px - 1024px)));
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+  .app-footer {
+    width: calc(1420px + (2540px - 1420px) * ((100vw - 1440px) / (2560px - 1440px)));
+    padding: calc(35px + (40px - 35px) * ((100vw - 1440px) / (2560px - 1440px))) 10px;
+  }
+  
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+    max-width: calc(1420px + (1440px - 1420px) * ((100vw - 1440px) / (2560px - 1440px)));
+    margin: 0 auto;
+  }
+  
+  .footer-branding {
+    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1440px) / (2560px - 1440px)));
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  
+  .footer-brand-letter {
+    font-size: calc(1.7rem + (1.8rem - 1.7rem) * ((100vw - 1440px) / (2560px - 1440px)));
+  }
+  
+  .footer-brand-gradient {
+    font-size: calc(1.4rem + (1.5rem - 1.4rem) * ((100vw - 1440px) / (2560px - 1440px)));
+  }
+  
+  .footer-brand-amp,
+  .footer-brand-letter-small {
+    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1440px) / (2560px - 1440px)));
+  }
+  
+  .footer-brand-gradient-small {
+    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1440px) / (2560px - 1440px)));
+  }
+  
+  .affiliation-text {
+    font-size: calc(13px + (14px - 13px) * ((100vw - 1440px) / (2560px - 1440px)));
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .truecoders-logo-link {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  
+  .truecoders-logo {
+    height: calc(26px + (28px - 26px) * ((100vw - 1440px) / (2560px - 1440px)));
+    max-width: calc(150px + (160px - 150px) * ((100vw - 1440px) / (2560px - 1440px)));
+  }
+  
+  .footer-text {
+    font-size: calc(13px + (14px - 13px) * ((100vw - 1440px) / (2560px - 1440px)));
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 2560px) {
+  .app-footer {
+    width: 2540px;
+    padding: 50px 10px;
+  }
+  
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    gap: 7px;
+    flex-wrap: nowrap;
+    max-width: 1440px;
+    width: 1440px;
+    min-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .footer-branding {
+    font-size: 2.8rem;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    height: 45px;
+  }
+  
+  .footer-brand-letter {
+    font-size: 3.0rem !important;
+  }
+  
+  .footer-brand-gradient {
+    font-size: 2.4rem !important;
+  }
+  
+  .footer-brand-amp {
+    font-size: 2.2rem !important;
+  }
+  
+  .footer-brand-letter-small {
+    font-size: 2.2rem !important;
+  }
+  
+  .footer-brand-gradient-small {
+    font-size: 2.2rem !important;
+  }
+  
+  .truecoders-logo-link {
+    align-self: flex-end;
+    transform: translateY(4px);
+  }
+  
+  .truecoders-logo {
+    height: 45px !important;
+    max-width: 260px !important;
+    display: block;
+  }
+  
+  .affiliation-text {
+    font-size: 1.4rem !important;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .footer-text {
+    font-size: 1.4rem !important;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .truecoders-logo-link {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .app-footer {
+    padding: 20px 10px;
+    min-height: 80px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 299.993px;
+    max-width: 299.993px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .app-footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .app-footer .footer-branding {
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .app-footer .footer-affiliation {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .app-footer .footer-text {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+

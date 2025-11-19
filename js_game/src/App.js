@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './styles/App.css';
+import './App.css';
 import DataService from './services/dataService.js';
-import Card from './components/Card.js';
-import HomeScreen from './components/HomeScreen.js';
-import Footer from './components/Footer.js';
+import HomeScreen from './screens/HomeScreen.js';
+import GameScreen from './screens/GameScreen.js';
 
 function App() {
   const [showHome, setShowHome] = useState(true);
@@ -21,6 +20,29 @@ function App() {
   const [gameTime, setGameTime] = useState(0);
   const [timerInterval, setTimerInterval] = useState(null);
   const [finalScore, setFinalScore] = useState(0);
+
+  // Topic to category mapping
+  const getCategoryInfo = (topicId) => {
+    const categoryMap = {
+      // Web Development
+      'javascript': { main: 'Web Development', sub: 'JavaScript' },
+      'nodejs': { main: 'Web Development', sub: 'Node.js' },
+      'react': { main: 'Web Development', sub: 'React' },
+      'html-css': { main: 'Web Development', sub: 'UI/UX (HTML & CSS)' },
+      // Software Engineering
+      'csharp': { main: 'Software Engineering', sub: 'C#' },
+      'aspnet': { main: 'Software Engineering', sub: 'ASP.NET' },
+      'dotnet': { main: 'Software Engineering', sub: '.NET Framework' },
+      // General Tech
+      'machine-learning': { main: 'General Tech', sub: 'Computer Hardware' },
+      'tech-history': { main: 'General Tech', sub: 'Tech History' },
+      'computers': { main: 'General Tech', sub: 'Computers' },
+      'algorithms': { main: 'General Tech', sub: 'Algorithms' },
+      // SQL (appears in multiple categories)
+      'sql': { main: 'Web Development', sub: 'SQL Relational Database' }
+    };
+    return categoryMap[topicId] || { main: 'Unknown', sub: 'Unknown' };
+  };
 
   const handleTopicSelect = async (topic) => {
     setSelectedTopic(topic);
@@ -300,81 +322,31 @@ function App() {
     return <HomeScreen onSelectTopic={handleTopicSelect} />;
   }
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div className="game-header">
-          <button 
-            className="back-button" 
-            onClick={handleBackToHome}
-            disabled={loading || isResetting}
-          >
-            ← Back to Topics
-          </button>
-                 <h1>Code Match</h1>
-          <div className="scoreboard">
-            {gameStarted && (
-              <>
-                <div className="score">Matches: {score}/{cards.length / 2}</div>
-                <div className="timer">Time: {Math.floor(gameTime / 60)}:{(gameTime % 60).toString().padStart(2, '0')}</div>
-                <div className="best-score">Best: {bestScore.toLocaleString()}</div>
-              </>
-            )}
-            {!gameStarted && cards.length > 0 && (
-              <div className="best-score">Best Score: {bestScore.toLocaleString()}</div>
-            )}
-          </div>
-        </div>
-        {!gameStarted && cards.length > 0 && !loading && (
-          <div className="start-game-container">
-            <p>Match questions with their answers! Click cards to flip them.</p>
-            <button className="start-game-button" onClick={handleStartGame}>
-              Start Game
-            </button>
-          </div>
-        )}
-        {isGameComplete && (
-          <div className="game-complete">
-            <h2>🎉 Congratulations! You matched them all!</h2>
-            <p className="final-score">Final Score: {finalScore.toLocaleString()}</p>
-            <p className="final-time">Time: {Math.floor(gameTime / 60)}:{(gameTime % 60).toString().padStart(2, '0')}</p>
-            <button onClick={resetGame} disabled={isResetting || loading}>
-              {isResetting || loading ? 'Loading...' : 'Play Again'}
-            </button>
-          </div>
-        )}
-        {loading ? (
-          <div className="loading-container">
-            <div className="spinner"></div>
-            <p>Loading questions and answers...</p>
-          </div>
-        ) : gameStarted ? (
-          <>
-            <div className="cards-container">
-              {cards.map(card => (
-                <Card
-                  key={card.id}
-                  card={card}
-                  onClick={handleCardClick}
-                  isFlipped={flippedCards.includes(card.id)}
-                  isMatched={matchedCards.includes(card.id)}
-                  isSelected={selectedCards.includes(card.id)}
-                />
-              ))}
-            </div>
-            <button 
-              className="reset-button" 
-              onClick={resetGame}
-              disabled={isResetting || loading}
-            >
-              {isResetting || loading ? 'Loading...' : 'Start Again'}
-            </button>
-          </>
-        ) : null}
-      </header>
-      <Footer />
-    </div>
-  );
+        const categoryInfo = getCategoryInfo(selectedTopic);
+
+        return (
+          <GameScreen
+            categoryInfo={categoryInfo}
+            onBack={handleBackToHome}
+            score={score}
+            totalPairs={cards.length / 2}
+            gameTime={gameTime}
+            bestScore={bestScore}
+            gameStarted={gameStarted}
+            cards={cards}
+            flippedCards={flippedCards}
+            matchedCards={matchedCards}
+            selectedCards={selectedCards}
+            onCardClick={handleCardClick}
+            onStartGame={handleStartGame}
+            isGameComplete={isGameComplete}
+            finalScore={finalScore}
+            onPlayAgain={resetGame}
+            loading={loading}
+            isResetting={isResetting}
+            onResetGame={resetGame}
+          />
+        );
 }
 
 export default App;

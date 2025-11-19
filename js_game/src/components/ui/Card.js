@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/card.css';
+import '../../styles/components/Card.css';
 
 const Card = ({ card, onClick, isFlipped, isMatched, isSelected }) => {
     const handleClick = (e) => {
@@ -12,10 +12,13 @@ const Card = ({ card, onClick, isFlipped, isMatched, isSelected }) => {
         }
     };
 
+    const borderColor = card.color || '#667eea';
+
     return (
         <div 
             className={`card ${isFlipped ? 'flipped' : ''} ${isMatched ? 'matched' : ''} ${isSelected ? 'selected' : ''}`}
             onClick={handleClick}
+            data-card-color={borderColor}
         >
             <div className="card-inner">
                 <div className="card-front">
@@ -39,3 +42,4 @@ const Card = ({ card, onClick, isFlipped, isMatched, isSelected }) => {
 };
 
 export default Card;
+

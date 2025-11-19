@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/Footer.css';
-import trueCodersLogo from '../TrueCodersLogo_OneLineTransparent.png';
+import '../../styles/components/Footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,23 +16,21 @@ const Footer = () => {
           <span className="footer-brand-letter-small">D</span>
           <span className="footer-brand-gradient-small">esign</span>
         </div>
-        <div className="footer-affiliation">
-          <span className="affiliation-text">in affiliation with</span>
-          <a 
-            href="https://truecoders.io" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="truecoders-logo-link"
-          >
-            <img 
-              src={trueCodersLogo} 
-              alt="TrueCoders" 
-              className="truecoders-logo"
-            />
-          </a>
-        </div>
+        <span className="affiliation-text">in affiliation with</span>
+        <a 
+          href="https://truecoders.io" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="truecoders-logo-link"
+        >
+          <img 
+            src="/TrueCodersLogo_OneLineTransparent.png" 
+            alt="TrueCoders" 
+            className="truecoders-logo"
+          />
+        </a>
         <span className="footer-text">
-          © {currentYear} CodeSpinner & Design. All rights reserved.
+          © {currentYear} All rights reserved.
         </span>
       </div>
     </footer>

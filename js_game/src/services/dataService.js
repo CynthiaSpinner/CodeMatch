@@ -17,59 +17,71 @@ const DataService = (config = {}) => {
     // Cache duration: 1 hour (3600000 ms)
     const CACHE_DURATION = 3600000;
 
-    // Topic configuration with display names and icons
+    // Topic configuration with display names, icons, and colors
     const topicConfig = {
         // Web Development sub-categories
         'javascript': {
             name: 'JavaScript',
-            icon: 'JS'
+            icon: 'JS',
+            color: '#F7DF1E'
         },
         'nodejs': {
             name: 'Node.js',
-            icon: '●'
+            icon: '●',
+            color: '#339933'
         },
         'react': {
             name: 'React',
-            icon: '◉'
+            icon: '◉',
+            color: '#61DAFB'
         },
         'html-css': {
             name: 'UI/UX (HTML & CSS)',
-            icon: '■'
+            icon: '■',
+            color: '#E34F26'
         },
         // Software Engineering sub-categories
         'csharp': {
             name: 'C#',
-            icon: 'C#'
+            icon: 'C#',
+            color: '#239120'
         },
         'aspnet': {
             name: 'ASP.NET',
-            icon: '▲'
+            icon: '▲',
+            color: '#512BD4'
         },
         'dotnet': {
             name: '.NET Framework',
-            icon: '◆'
+            icon: '◆',
+            color: '#512BD4'
         },
         // General Tech sub-categories
         'machine-learning': {
             name: 'Computer Hardware',
-            icon: '◼'
+            icon: '◼',
+            color: '#FF6B6B'
         },
         'tech-history': {
             name: 'Tech History',
-            icon: '◈'
+            icon: '◈',
+            color: '#4ECDC4'
         },
         'computers': {
             name: 'Computers',
-            icon: '◉'
+            icon: '◉',
+            color: '#4A90E2'
         },
         'algorithms': {
             name: 'Algorithms',
-            icon: '◊'
+            icon: '◊',
+            color: '#95E1D3'
         },
         // SQL (shared between webdev and software-engineering)
         'sql': {
             name: 'SQL Relational Database',
-            icon: '▣'
+            icon: '▣',
+            color: '#336791'
         }
     };
 
@@ -126,29 +138,31 @@ const DataService = (config = {}) => {
             // Create cards for matching game
             const cards = [];
             
-            // Create question cards
-            selectedPairs.forEach((pair, index) => {
-                cards.push({
-                    id: `q_${topic}_${index}`,
-                    type: 'question',
-                    content: pair.question,
-                    matchId: `a_${topic}_${index}`,
-                    icon: config.icon,
-                    topicName: config.name
-                });
-            });
-            
-            // Create answer cards
-            selectedPairs.forEach((pair, index) => {
-                cards.push({
-                    id: `a_${topic}_${index}`,
-                    type: 'answer',
-                    content: pair.answer,
-                    matchId: `q_${topic}_${index}`,
-                    icon: config.icon,
-                    topicName: config.name
-                });
-            });
+                   // Create question cards
+                   selectedPairs.forEach((pair, index) => {
+                       cards.push({
+                           id: `q_${topic}_${index}`,
+                           type: 'question',
+                           content: pair.question,
+                           matchId: `a_${topic}_${index}`,
+                           icon: config.icon,
+                           topicName: config.name,
+                           color: config.color
+                       });
+                   });
+
+                   // Create answer cards
+                   selectedPairs.forEach((pair, index) => {
+                       cards.push({
+                           id: `a_${topic}_${index}`,
+                           type: 'answer',
+                           content: pair.answer,
+                           matchId: `q_${topic}_${index}`,
+                           icon: config.icon,
+                           topicName: config.name,
+                           color: config.color
+                       });
+                   });
             
             // Validate we have enough cards (at least 8 cards = 4 pairs minimum)
             const minCards = 8; // Minimum 4 pairs

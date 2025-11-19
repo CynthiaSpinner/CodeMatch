@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import '../styles/HomeScreen.css';
-import Footer from './Footer.js';
+import '../styles/screens/HomeScreen.css';
+import '../styles/components/TopicCard.css';
+import Footer from '../components/ui/Footer.js';
+import TopicCard from '../components/ui/TopicCard.js';
+import SubCategoryScreen from './SubCategoryScreen.js';
 
 const HomeScreen = ({ onSelectTopic }) => {
   const [selectedMainTopic, setSelectedMainTopic] = useState(null);
@@ -62,32 +65,11 @@ const HomeScreen = ({ onSelectTopic }) => {
 
   if (selectedMainTopic) {
     return (
-      <div className="home-screen">
-        <div className="home-content">
-          <button className="back-button-home" onClick={handleBack}>
-            ← Back to Topics
-          </button>
-          <h1 className="home-title">{selectedMainTopic.name}</h1>
-          <p className="home-subtitle">Choose a sub-category to start learning!</p>
-          
-          <div className="topics-grid">
-            {selectedMainTopic.subCategories.map(subCategory => (
-              <div
-                key={subCategory.id}
-                className="topic-card"
-                onClick={() => handleSubCategoryClick(subCategory.id)}
-                style={{ borderColor: subCategory.color || selectedMainTopic.color }}
-              >
-                <div className="topic-icon" style={{ color: subCategory.color || selectedMainTopic.color }}>
-                  {subCategory.icon}
-                </div>
-                <h3 className="topic-name">{subCategory.name}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-        <Footer />
-      </div>
+      <SubCategoryScreen
+        topic={selectedMainTopic}
+        onSelectSubCategory={handleSubCategoryClick}
+        onBack={handleBack}
+      />
     );
   }
 
@@ -95,28 +77,22 @@ const HomeScreen = ({ onSelectTopic }) => {
     <div className="home-screen">
       <div className="home-header">
         <div className="home-header-content">
-          <h2 className="home-header-title">Code Match</h2>
-          <p className="home-header-subtitle">Test your knowledge with interactive matching games</p>
+          <h2 className="home-header-title">CodeMatch</h2>
+          <p className="home-header-subtitle">Test your knowledge with this interactive memory matching game</p>
         </div>
       </div>
       <div className="home-content">
-        <h1 className="home-title">Welcome to Code Match!</h1>
+        <h1 className="home-title">Welcome</h1>
         <p className="home-subtitle">Choose a topic to start learning!</p>
         
         <div className="topics-grid">
           {mainTopics.map(topic => (
-            <div
+            <TopicCard
               key={topic.id}
-              className="topic-card"
+              topic={topic}
               onClick={() => handleMainTopicClick(topic)}
-              style={{ borderColor: topic.color }}
-            >
-              <div className="topic-icon" style={{ color: topic.color }}>
-                {topic.icon}
-              </div>
-              <h3 className="topic-name">{topic.name}</h3>
-              <p className="topic-description">{topic.description}</p>
-            </div>
+              showDescription={true}
+            />
           ))}
         </div>
       </div>
