@@ -195,24 +195,24 @@
 /* Responsive Breakpoints */
 @media (min-width: 768px) {
   .topic-card {
-    padding: calc(30px + (25px - 30px) * ((100vw - 768px) / (1024px - 768px))) calc(20px + (18px - 20px) * ((100vw - 768px) / (1024px - 768px)));
-    min-height: calc(200px + (180px - 200px) * ((100vw - 768px) / (1024px - 768px)));
+    padding: calc(30px + (25px - 30px) * ((100vw - 768px) / 256)) calc(20px + (18px - 20px) * ((100vw - 768px) / 256));
+    min-height: calc(200px + (180px - 200px) * ((100vw - 768px) / 256));
   }
   
   .topic-icon {
-    font-size: calc(4rem + (3.5rem - 4rem) * ((100vw - 768px) / (1024px - 768px)));
-    height: calc(4rem + (3.5rem - 4rem) * ((100vw - 768px) / (1024px - 768px)));
-    margin-top: calc(20px + (15px - 20px) * ((100vw - 768px) / (1024px - 768px)));
-    margin-bottom: calc(15px + (10px - 15px) * ((100vw - 768px) / (1024px - 768px)));
+    font-size: calc(4rem + (3.5rem - 4rem) * ((100vw - 768px) / 256));
+    height: calc(4rem + (3.5rem - 4rem) * ((100vw - 768px) / 256));
+    margin-top: calc(20px + (15px - 20px) * ((100vw - 768px) / 256));
+    margin-bottom: calc(15px + (10px - 15px) * ((100vw - 768px) / 256));
   }
   
   .topic-name {
-    font-size: calc(1.5rem + (1.3rem - 1.5rem) * ((100vw - 768px) / (1024px - 768px)));
-    margin-bottom: calc(10px + (8px - 10px) * ((100vw - 768px) / (1024px - 768px)));
+    font-size: calc(1.5rem + (1.3rem - 1.5rem) * ((100vw - 768px) / 256));
+    margin-bottom: calc(10px + (8px - 10px) * ((100vw - 768px) / 256));
   }
   
   .topic-description {
-    font-size: calc(1rem + (0.95rem - 1rem) * ((100vw - 768px) / (1024px - 768px)));
+    font-size: calc(1rem + (0.95rem - 1rem) * ((100vw - 768px) / 256));
   }
 }
 
@@ -245,26 +245,26 @@
 
 @media (min-width: 1440px) {
   .topic-card {
-    padding: calc(32px + (50px - 32px) * ((100vw - 1440px) / (2560px - 1440px))) calc(25px + (40px - 25px) * ((100vw - 1440px) / (2560px - 1440px)));
-    min-height: calc(260px + (350px - 260px) * ((100vw - 1440px) / (2560px - 1440px)));
+    padding: calc(32px + (50px - 32px) * ((100vw - 1440px) / 1120)) calc(25px + (40px - 25px) * ((100vw - 1440px) / 1120));
+    min-height: calc(260px + (350px - 260px) * ((100vw - 1440px) / 1120));
     justify-content: flex-start;
   }
   
   .topic-icon {
-    font-size: calc(3.2rem + (4.5rem - 3.2rem) * ((100vw - 1440px) / (2560px - 1440px)));
-    height: calc(3.2rem + (4.5rem - 3.2rem) * ((100vw - 1440px) / (2560px - 1440px)));
-    margin-top: calc(35px + (60px - 35px) * ((100vw - 1440px) / (2560px - 1440px)));
-    margin-bottom: calc(16px + (25px - 16px) * ((100vw - 1440px) / (2560px - 1440px)));
+    font-size: calc(3.2rem + (4.5rem - 3.2rem) * ((100vw - 1440px) / 1120));
+    height: calc(3.2rem + (4.5rem - 3.2rem) * ((100vw - 1440px) / 1120));
+    margin-top: calc(35px + (60px - 35px) * ((100vw - 1440px) / 1120));
+    margin-bottom: calc(16px + (25px - 16px) * ((100vw - 1440px) / 1120));
   }
   
   .topic-name {
-    font-size: calc(1.4rem + (2rem - 1.4rem) * ((100vw - 1440px) / (2560px - 1440px)));
-    margin-bottom: calc(11px + (15px - 11px) * ((100vw - 1440px) / (2560px - 1440px)));
+    font-size: calc(1.4rem + (2rem - 1.4rem) * ((100vw - 1440px) / 1120));
+    margin-bottom: calc(11px + (15px - 11px) * ((100vw - 1440px) / 1120));
   }
   
   .topic-description {
-    font-size: calc(1.05rem + (1.3rem - 1.05rem) * ((100vw - 1440px) / (2560px - 1440px)));
-    line-height: calc(1.45 + (1.6 - 1.45) * ((100vw - 1440px) / (2560px - 1440px)));
+    font-size: calc(1.05rem + (1.3rem - 1.05rem) * ((100vw - 1440px) / 1120));
+    line-height: calc(1.45 + (1.6 - 1.45) * ((100vw - 1440px) / 1120));
   }
 }
 

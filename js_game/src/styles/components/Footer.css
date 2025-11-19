@@ -165,34 +165,34 @@
 
 @media (min-width: 321px) and (max-width: 374px) {
   .app-footer {
-    width: calc(299.993px + (355px - 299.993px) * ((100vw - 320px) / (375px - 320px)));
+    width: calc(299.993px + (355px - 299.993px) * ((100vw - 320px) / 55));
     left: 50%;
     transform: translateX(-50%);
   }
   
   .footer-content {
-    gap: calc(8px + (10px - 8px) * ((100vw - 320px) / (375px - 320px)));
+    gap: calc(8px + (10px - 8px) * ((100vw - 320px) / 55));
   }
   
   .footer-branding {
-    font-size: calc(0.9rem + (1rem - 0.9rem) * ((100vw - 320px) / (375px - 320px)));
+    font-size: calc(0.9rem + (1rem - 0.9rem) * ((100vw - 320px) / 55));
   }
   
   .footer-brand-letter {
-    font-size: calc(0.9rem + (1.6rem - 0.9rem) * ((100vw - 320px) / (375px - 320px)));
+    font-size: calc(0.9rem + (1.6rem - 0.9rem) * ((100vw - 320px) / 55));
   }
   
   .footer-brand-gradient {
-    font-size: calc(0.75rem + (1.3rem - 0.75rem) * ((100vw - 320px) / (375px - 320px)));
+    font-size: calc(0.75rem + (1.3rem - 0.75rem) * ((100vw - 320px) / 55));
   }
   
   .footer-brand-amp,
   .footer-brand-letter-small {
-    font-size: calc(0.75rem + (1.2rem - 0.75rem) * ((100vw - 320px) / (375px - 320px)));
+    font-size: calc(0.75rem + (1.2rem - 0.75rem) * ((100vw - 320px) / 55));
   }
   
   .footer-brand-gradient-small {
-    font-size: calc(0.75rem + (1.2rem - 0.75rem) * ((100vw - 320px) / (375px - 320px)));
+    font-size: calc(0.75rem + (1.2rem - 0.75rem) * ((100vw - 320px) / 55));
   }
   
   .footer-affiliation {
@@ -201,49 +201,49 @@
   }
   
   .affiliation-text {
-    font-size: calc(0.65rem + (11px - 0.65rem) * ((100vw - 320px) / (375px - 320px)));
+    font-size: calc(0.65rem + (11px - 0.65rem) * ((100vw - 320px) / 55));
   }
   
   .truecoders-logo {
-    height: calc(18px + (22px - 18px) * ((100vw - 320px) / (375px - 320px)));
-    max-width: calc(100px + (120px - 100px) * ((100vw - 320px) / (375px - 320px)));
+    height: calc(18px + (22px - 18px) * ((100vw - 320px) / 55));
+    max-width: calc(100px + (120px - 100px) * ((100vw - 320px) / 55));
   }
   
   .footer-text {
-    font-size: calc(0.7rem + (11px - 0.7rem) * ((100vw - 320px) / (375px - 320px)));
+    font-size: calc(0.7rem + (11px - 0.7rem) * ((100vw - 320px) / 55));
   }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
   .app-footer {
-    width: calc(355px + (405px - 355px) * ((100vw - 375px) / (425px - 375px)));
+    width: calc(355px + (405px - 355px) * ((100vw - 375px) / 50));
     left: 50%;
     transform: translateX(-50%);
   }
   
   .footer-content {
-    gap: calc(10px + (12px - 10px) * ((100vw - 375px) / (425px - 375px)));
+    gap: calc(10px + (12px - 10px) * ((100vw - 375px) / 50));
   }
   
   .footer-branding {
-    font-size: calc(1rem + (1.1rem - 1rem) * ((100vw - 375px) / (425px - 375px)));
+    font-size: calc(1rem + (1.1rem - 1rem) * ((100vw - 375px) / 50));
   }
   
   .footer-brand-letter {
-    font-size: calc(1.6rem + (1.7rem - 1.6rem) * ((100vw - 375px) / (425px - 375px)));
+    font-size: calc(1.6rem + (1.7rem - 1.6rem) * ((100vw - 375px) / 50));
   }
   
   .footer-brand-gradient {
-    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 375px) / (425px - 375px)));
+    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 375px) / 50));
   }
   
   .footer-brand-amp,
   .footer-brand-letter-small {
-    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 375px) / (425px - 375px)));
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 375px) / 50));
   }
   
   .footer-brand-gradient-small {
-    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 375px) / (425px - 375px)));
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 375px) / 50));
   }
   
   .footer-affiliation {
@@ -252,49 +252,49 @@
   }
   
   .affiliation-text {
-    font-size: calc(11px + (12px - 11px) * ((100vw - 375px) / (425px - 375px)));
+    font-size: calc(11px + (12px - 11px) * ((100vw - 375px) / 50));
   }
   
   .truecoders-logo {
-    height: calc(22px + (24px - 22px) * ((100vw - 375px) / (425px - 375px)));
-    max-width: calc(120px + (140px - 120px) * ((100vw - 375px) / (425px - 375px)));
+    height: calc(22px + (24px - 22px) * ((100vw - 375px) / 50));
+    max-width: calc(120px + (140px - 120px) * ((100vw - 375px) / 50));
   }
   
   .footer-text {
-    font-size: calc(11px + (12px - 11px) * ((100vw - 375px) / (425px - 375px)));
+    font-size: calc(11px + (12px - 11px) * ((100vw - 375px) / 50));
   }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
   .app-footer {
-    width: calc(405px + (748px - 405px) * ((100vw - 425px) / (768px - 425px)));
+    width: calc(405px + (748px - 405px) * ((100vw - 425px) / 343));
     left: 50%;
     transform: translateX(-50%);
   }
   
   .footer-content {
-    gap: calc(12px + (12px - 12px) * ((100vw - 425px) / (768px - 425px)));
+    gap: calc(12px + (12px - 12px) * ((100vw - 425px) / 343));
   }
   
   .footer-branding {
-    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 425px) / (768px - 425px)));
+    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 425px) / 343));
   }
   
   .footer-brand-letter {
-    font-size: calc(1.7rem + (1.5rem - 1.7rem) * ((100vw - 425px) / (768px - 425px)));
+    font-size: calc(1.7rem + (1.5rem - 1.7rem) * ((100vw - 425px) / 343));
   }
   
   .footer-brand-gradient {
-    font-size: calc(1.4rem + (1.2rem - 1.4rem) * ((100vw - 425px) / (768px - 425px)));
+    font-size: calc(1.4rem + (1.2rem - 1.4rem) * ((100vw - 425px) / 343));
   }
   
   .footer-brand-amp,
   .footer-brand-letter-small {
-    font-size: calc(1.3rem + (1.1rem - 1.3rem) * ((100vw - 425px) / (768px - 425px)));
+    font-size: calc(1.3rem + (1.1rem - 1.3rem) * ((100vw - 425px) / 343));
   }
   
   .footer-brand-gradient-small {
-    font-size: calc(1.3rem + (1.1rem - 1.3rem) * ((100vw - 425px) / (768px - 425px)));
+    font-size: calc(1.3rem + (1.1rem - 1.3rem) * ((100vw - 425px) / 343));
   }
   
   .footer-affiliation {
@@ -303,23 +303,23 @@
   }
   
   .affiliation-text {
-    font-size: calc(12px + (12px - 12px) * ((100vw - 425px) / (768px - 425px)));
+    font-size: calc(12px + (12px - 12px) * ((100vw - 425px) / 343));
   }
   
   .truecoders-logo {
-    height: calc(24px + (24px - 24px) * ((100vw - 425px) / (768px - 425px)));
-    max-width: calc(140px + (140px - 140px) * ((100vw - 425px) / (768px - 425px)));
+    height: calc(24px + (24px - 24px) * ((100vw - 425px) / 343));
+    max-width: calc(140px + (140px - 140px) * ((100vw - 425px) / 343));
   }
   
   .footer-text {
-    font-size: calc(12px + (12px - 12px) * ((100vw - 425px) / (768px - 425px)));
+    font-size: calc(12px + (12px - 12px) * ((100vw - 425px) / 343));
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .app-footer {
-    width: calc(748px + (1004px - 748px) * ((100vw - 768px) / (1024px - 768px)));
-    padding: calc(25px + (30px - 25px) * ((100vw - 768px) / (1024px - 768px))) 10px;
+    width: calc(748px + (1004px - 748px) * ((100vw - 768px) / 256));
+    padding: calc(25px + (30px - 25px) * ((100vw - 768px) / 256)) 10px;
   }
   
   .footer-content {
@@ -331,33 +331,33 @@
   }
   
   .footer-branding {
-    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 768px) / (1024px - 768px)));
+    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 768px) / 256));
     margin: 0;
     padding: 0;
     flex-shrink: 0;
     align-self: flex-end;
-    transform: translateY(calc(0.5px + (0px - 0.5px) * ((100vw - 768px) / (1024px - 768px))));
+    transform: translateY(calc(0.5px + (0px - 0.5px) * ((100vw - 768px) / 256)));
   }
   
   .footer-brand-letter {
-    font-size: calc(1.5rem + (1.6rem - 1.5rem) * ((100vw - 768px) / (1024px - 768px)));
+    font-size: calc(1.5rem + (1.6rem - 1.5rem) * ((100vw - 768px) / 256));
   }
   
   .footer-brand-gradient {
-    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 768px) / (1024px - 768px)));
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 768px) / 256));
   }
   
   .footer-brand-amp,
   .footer-brand-letter-small {
-    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 768px) / (1024px - 768px)));
+    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 768px) / 256));
   }
   
   .footer-brand-gradient-small {
-    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 768px) / (1024px - 768px)));
+    font-size: calc(1.1rem + (1.2rem - 1.1rem) * ((100vw - 768px) / 256));
   }
   
   .affiliation-text {
-    font-size: calc(11px + (12px - 11px) * ((100vw - 768px) / (1024px - 768px)));
+    font-size: calc(11px + (12px - 11px) * ((100vw - 768px) / 256));
     margin: 0;
     padding: 0;
     white-space: nowrap;
@@ -369,16 +369,16 @@
     padding: 0;
     flex-shrink: 0;
     align-self: flex-end;
-    transform: translateY(calc(1.5px + (2px - 1.5px) * ((100vw - 768px) / (1024px - 768px))));
+    transform: translateY(calc(1.5px + (2px - 1.5px) * ((100vw - 768px) / 256)));
   }
   
   .truecoders-logo {
-    height: calc(22px + (24px - 22px) * ((100vw - 768px) / (1024px - 768px)));
-    max-width: calc(130px + (140px - 130px) * ((100vw - 768px) / (1024px - 768px)));
+    height: calc(22px + (24px - 22px) * ((100vw - 768px) / 256));
+    max-width: calc(130px + (140px - 130px) * ((100vw - 768px) / 256));
   }
   
   .footer-text {
-    font-size: calc(11px + (12px - 11px) * ((100vw - 768px) / (1024px - 768px)));
+    font-size: calc(11px + (12px - 11px) * ((100vw - 768px) / 256));
     margin: 0;
     padding: 0;
     white-space: nowrap;
@@ -388,8 +388,8 @@
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   .app-footer {
-    width: calc(1004px + (1420px - 1004px) * ((100vw - 1024px) / (1440px - 1024px)));
-    padding: calc(30px + (35px - 30px) * ((100vw - 1024px) / (1440px - 1024px))) 10px;
+    width: calc(1004px + (1420px - 1004px) * ((100vw - 1024px) / 416));
+    padding: calc(30px + (35px - 30px) * ((100vw - 1024px) / 416)) 10px;
   }
   
   .footer-content {
@@ -401,33 +401,33 @@
   }
   
   .footer-branding {
-    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 1024px) / (1440px - 1024px)));
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 1024px) / 416));
     margin: 0;
     padding: 0;
     flex-shrink: 0;
     align-self: flex-end;
-    transform: translateY(calc(0px + (1px - 0px) * ((100vw - 1024px) / (1440px - 1024px))));
+    transform: translateY(calc(0px + (1px - 0px) * ((100vw - 1024px) / 416)));
   }
   
   .footer-brand-letter {
-    font-size: calc(1.6rem + (1.7rem - 1.6rem) * ((100vw - 1024px) / (1440px - 1024px)));
+    font-size: calc(1.6rem + (1.7rem - 1.6rem) * ((100vw - 1024px) / 416));
   }
   
   .footer-brand-gradient {
-    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1024px) / (1440px - 1024px)));
+    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1024px) / 416));
   }
   
   .footer-brand-amp,
   .footer-brand-letter-small {
-    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 1024px) / (1440px - 1024px)));
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 1024px) / 416));
   }
   
   .footer-brand-gradient-small {
-    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 1024px) / (1440px - 1024px)));
+    font-size: calc(1.2rem + (1.3rem - 1.2rem) * ((100vw - 1024px) / 416));
   }
   
   .affiliation-text {
-    font-size: calc(12px + (13px - 12px) * ((100vw - 1024px) / (1440px - 1024px)));
+    font-size: calc(12px + (13px - 12px) * ((100vw - 1024px) / 416));
     margin: 0;
     padding: 0;
     white-space: nowrap;
@@ -439,16 +439,16 @@
     padding: 0;
     flex-shrink: 0;
     align-self: flex-end;
-    transform: translateY(calc(2px + (3px - 2px) * ((100vw - 1024px) / (1440px - 1024px))));
+    transform: translateY(calc(2px + (3px - 2px) * ((100vw - 1024px) / 416)));
   }
   
   .truecoders-logo {
-    height: calc(24px + (26px - 24px) * ((100vw - 1024px) / (1440px - 1024px)));
-    max-width: calc(140px + (150px - 140px) * ((100vw - 1024px) / (1440px - 1024px)));
+    height: calc(24px + (26px - 24px) * ((100vw - 1024px) / 416));
+    max-width: calc(140px + (150px - 140px) * ((100vw - 1024px) / 416));
   }
   
   .footer-text {
-    font-size: calc(12px + (13px - 12px) * ((100vw - 1024px) / (1440px - 1024px)));
+    font-size: calc(12px + (13px - 12px) * ((100vw - 1024px) / 416));
     margin: 0;
     padding: 0;
     white-space: nowrap;
@@ -458,8 +458,8 @@
 
 @media (min-width: 1440px) and (max-width: 2559px) {
   .app-footer {
-    width: calc(1420px + (2540px - 1420px) * ((100vw - 1440px) / (2560px - 1440px)));
-    padding: calc(35px + (40px - 35px) * ((100vw - 1440px) / (2560px - 1440px))) 10px;
+    width: calc(1420px + (2540px - 1420px) * ((100vw - 1440px) / 1120));
+    padding: calc(35px + (40px - 35px) * ((100vw - 1440px) / 1120)) 10px;
   }
   
   .footer-content {
@@ -468,12 +468,12 @@
     justify-content: center;
     gap: 5px;
     flex-wrap: nowrap;
-    max-width: calc(1420px + (1440px - 1420px) * ((100vw - 1440px) / (2560px - 1440px)));
+    max-width: calc(1420px + (1440px - 1420px) * ((100vw - 1440px) / 1120));
     margin: 0 auto;
   }
   
   .footer-branding {
-    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1440px) / (2560px - 1440px)));
+    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1440px) / 1120));
     margin: 0;
     padding: 0;
     flex-shrink: 0;
@@ -482,24 +482,24 @@
   }
   
   .footer-brand-letter {
-    font-size: calc(1.7rem + (1.8rem - 1.7rem) * ((100vw - 1440px) / (2560px - 1440px)));
+    font-size: calc(1.7rem + (1.8rem - 1.7rem) * ((100vw - 1440px) / 1120));
   }
   
   .footer-brand-gradient {
-    font-size: calc(1.4rem + (1.5rem - 1.4rem) * ((100vw - 1440px) / (2560px - 1440px)));
+    font-size: calc(1.4rem + (1.5rem - 1.4rem) * ((100vw - 1440px) / 1120));
   }
   
   .footer-brand-amp,
   .footer-brand-letter-small {
-    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1440px) / (2560px - 1440px)));
+    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1440px) / 1120));
   }
   
   .footer-brand-gradient-small {
-    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1440px) / (2560px - 1440px)));
+    font-size: calc(1.3rem + (1.4rem - 1.3rem) * ((100vw - 1440px) / 1120));
   }
   
   .affiliation-text {
-    font-size: calc(13px + (14px - 13px) * ((100vw - 1440px) / (2560px - 1440px)));
+    font-size: calc(13px + (14px - 13px) * ((100vw - 1440px) / 1120));
     margin: 0;
     padding: 0;
     white-space: nowrap;
@@ -511,16 +511,16 @@
     padding: 0;
     flex-shrink: 0;
     align-self: flex-end;
-    transform: translateY(calc(3px + (4px - 3px) * ((100vw - 1440px) / (2560px - 1440px))));
+    transform: translateY(calc(3px + (4px - 3px) * ((100vw - 1440px) / 1120)));
   }
   
   .truecoders-logo {
-    height: calc(26px + (28px - 26px) * ((100vw - 1440px) / (2560px - 1440px)));
-    max-width: calc(150px + (160px - 150px) * ((100vw - 1440px) / (2560px - 1440px)));
+    height: calc(26px + (28px - 26px) * ((100vw - 1440px) / 1120));
+    max-width: calc(150px + (160px - 150px) * ((100vw - 1440px) / 1120));
   }
   
   .footer-text {
-    font-size: calc(13px + (14px - 13px) * ((100vw - 1440px) / (2560px - 1440px)));
+    font-size: calc(13px + (14px - 13px) * ((100vw - 1440px) / 1120));
     margin: 0;
     padding: 0;
     white-space: nowrap;
