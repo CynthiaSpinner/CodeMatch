@@ -2,7 +2,7 @@
 
 Interactive React-based educational matching game that helps students learn web development and software engineering concepts through gamified question-and-answer matching.
 
-**Live demo:** [coderecall.pro](https://coderecall.pro)
+**Live** [coderecall.pro](https://coderecall.pro)
 
 ## Features
 
