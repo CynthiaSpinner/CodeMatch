@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# CodeRecall (js_game)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Interactive React-based educational matching game that helps students learn web development and software engineering concepts through gamified question-and-answer matching.
 
-## Available Scripts
+**Live demo:** [coderecall.pro](https://coderecall.pro)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Topic-based learning** – Choose from Web Development, Software Engineering, and General Tech, then pick a subcategory (e.g. JavaScript, React, Node.js, C#, ASP.NET, SQL, Algorithms).
+- **Matching game** – Match question cards to answer cards; complete the board to finish the round.
+- **Scoring & timer** – Track score and time; best score is persisted for the session.
+- **Responsive UI** – Card-based layout with clear feedback for matches and game completion.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React** (Create React App)
+- **CSS** (custom styles, no UI framework)
+- **Netlify** (hosting)
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+├── App.js              # Main app state, game flow, topic → category mapping
+├── components/ui/      # Reusable UI (Card, TopicCard, Scoreboard, GameHeader, etc.)
+├── screens/            # HomeScreen, SubCategoryScreen, StartGameScreen, GameScreen, GameComplete
+├── services/           # dataService.js (loads question/answer data)
+├── data/               # questionsDatabase.json (Q&A by topic)
+└── styles/             # Component and screen CSS
+```
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher recommended)
+- npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install and run
 
-### `npm run eject`
+```bash
+git clone <your-repo-url>
+cd js_game
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open [http://localhost:3000](http://localhost:3000) to play locally.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Build for production
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+Output is in the `build/` folder (e.g. for Netlify).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm test
+```
 
-### Code Splitting
+## Topics Covered
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Category            | Subcategories |
+|---------------------|---------------|
+| Web Development     | JavaScript, Node.js, React, UI/UX (HTML & CSS), SQL |
+| Software Engineering| C#, ASP.NET, .NET Framework, SQL |
+| General Tech        | Computer Hardware, Tech History, Computers, Algorithms |
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Private / educational use. Question content may be subject to curriculum licensing.
