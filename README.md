@@ -20,13 +20,16 @@ Interactive React-based educational matching game that helps students learn web 
 ## Project Structure
 
 ```
-src/
-├── App.js              # Main app state, game flow, topic → category mapping
-├── components/ui/      # Reusable UI (Card, TopicCard, Scoreboard, GameHeader, etc.)
-├── screens/            # HomeScreen, SubCategoryScreen, StartGameScreen, GameScreen, GameComplete
-├── services/           # dataService.js (loads question/answer data)
-├── data/               # questionsDatabase.json (Q&A by topic)
-└── styles/             # Component and screen CSS
+js_game/
+├── src/
+│   ├── App.js              # Main app state, game flow, topic → category mapping
+│   ├── components/ui/      # Reusable UI (Card, TopicCard, Scoreboard, GameHeader, etc.)
+│   ├── screens/            # HomeScreen, SubCategoryScreen, StartGameScreen, GameScreen, GameComplete
+│   ├── services/           # dataService.js (loads question/answer data)
+│   ├── data/               # questionsDatabase.json (Q&A by topic)
+│   └── styles/             # Component and screen CSS
+├── public/
+└── package.json
 ```
 
 ## Getting Started
